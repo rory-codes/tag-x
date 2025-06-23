@@ -30,32 +30,32 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
 <body>
   <div id="navbar-container">
     <nav>
-<nav id="navigation" class="navbar navbar-expand-lg fixed-top"> <!--bg-body-tertiary class removed to change background color of navbar. fixed-top added to ensure navbar is fixed to the top of the screen-->
+<nav id="navigation" class="navbar navbar-expand-lg"> <!--bg-body-tertiary class removed to change background color of navbar. fixed-top removed-->
           <a class="navbar-brand" href="index.html">
-            <img src="assets/images/tag-x-logo-1.png" alt="Tag X logo (Takes user to home page when clicked)" class="nav-logo" loading="lazy"> <!--Logo created using canva and imported--><!--Lazy loading-->
+            <img src="assets/images/tag-x-logo-1.png" alt="Tag X logo (Takes user to home page when clicked)" id="nav-logo" loading="lazy"> <!--Logo created using canva and imported--><!--Lazy loading-->
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto"><!--ms-auto added to push navbar items to the right-->
               <li class="nav-item">
-                <a class="nav-link" href="#about">About Tag x</a>
+                <a class="nav-link" href="#about"><p>[About TAG X]</p></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#history">The history of tag</a>
+                <a class="nav-link" href="#history"><p>[The history of tag]</p></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#tag-x-rules">TAG X rulebook</a>
+                <a class="nav-link" href="#tag-x-rules"><p>[TAG X rulebook]</p></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Tag-x-adults">Get involved</a>
+                <a class="nav-link" href="#tag-x-adults"><p>[Get involved]</p></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#Tag-x-juniors">Junior taggers</a>
+                <a class="nav-link" href="#tag-x-juniors"><p>[Junior taggers]</p></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link booking-button" href="#enquiry-form">Enquire now</a><!--Added custom class to change appearance of booking button-->
+                <a class="nav-link booking-button" href="#enquiry-form"><p>[Enquire now]</p></a><!--Added custom class to change appearance of booking button-->
               </li>
             </ul>
          </div>
@@ -68,7 +68,10 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
     <!--Landing page-->
     <section id="landing-page">
       <div class="landing-info">
-        <h1>TAG X - ENTER NOW</h1>
+        <h1> TAG X</h1>
+        <p>Play Smart</p>
+        <p>Play Fast.</p> 
+        <p>Play Tag X</p>
         <!--mt-3 to give breathing space-->
         <button id="enter-btn" class="mt-3" type="button" aria-label="Enter">
           Enter
@@ -81,15 +84,18 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
     <section id="tag-x-intro">
 <div id="about"> 
 <h1>Tag X</h1>
+<img class="about-image" src="assets/images/tag-x-about.jpg" alt="Various people playing Tag X" loading="lazy"> <!--Lazy loading-->
 <p>
-    Tag X is the exciting new way to experience rugby in the South East of England! Whether you're looking to stay active, meet new people, or just enjoy the game without the rough tackles, Tag X offers a fun, fast-paced, and non-contact version of rugby that's perfect for all skill levels.
+    Tag X is the exciting new way to experience rugby in the South East of England! Whether you're looking to stay active, meet new people, or just enjoy the game without the contact, Tag X offers a fun, fast-paced, and non-contact version of rugby that's perfect for all skill levels. <br><br>
+    <br>
 
-Games are played in 6- and 7-a-side formats, with options for both mixed gender and single gender matches — making it an inclusive and social way to enjoy sport. With no tackling and no scrums, Tag X focuses on agility, teamwork, and strategy, offering a safe environment to get fit and have fun.
+Games are played in 6- and 7-a-side formats, with options for both mixed gender and single gender matches — making it an inclusive and social way to enjoy sport. With no tackling and no scrums, Tag X focuses on agility, teamwork, and strategy, offering a safe environment to get fit and have fun.<br><br><br>
 
-Whether you're a seasoned player or brand new to the game, Tag X is your chance to enjoy rugby in a whole new way.
+Whether you're a seasoned player or brand new to the game, Tag X is your chance to enjoy rugby in a whole new way. Play Smart. Play Fast. <strong>Play Tag X!</strong>
 </p>
 <button>Enquire</button>
 </div>
+
 <!--History section-->
 <div id="history">
 <h2>History of Tag Rugby</h2>
@@ -123,8 +129,10 @@ Whether you're a seasoned player or brand new to the game, Tag X is your chance 
 <p>
     The aim of Tag X is to score more points than the opposing team by full time. Points are earned by scoring tries, which happens when a player places the ball on or over the try line.
 </p>
-
-<h2>The rulebook</h2>
+<p>
+    The game is played on a rectangular playing area (roughly half of a rugby pitch) with two teams of six or seven players each. Players wear tags attached to their shorts, which defenders must remove to stop the ball carrier. The game emphasizes speed, agility, and teamwork, making it suitable for players of all ages and skill levels.
+</p>
+<h2>The TAG X Rulebook</h2>
 
 <h3>Number of Players</h3>
   <ul>
@@ -290,6 +298,9 @@ Whether you're a seasoned player or brand new to the game, Tag X is your chance 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
 </script>
+
+<!-- Font Awesome kit -->
+<script src="https://kit.fontawesome.com/aa9af45995.js" crossorigin="anonymous"></script>
 
 </body>
 </html>

@@ -11,3 +11,50 @@
   --code-font-family: 'JetBrains Mono', monospace;
 }
 
+/*non-specific styles*/
+body {
+  background-color: var(--lowlight-color);
+  margin: 0.7rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-color);
+  font-family: var(--code-font-family);
+  margin: 3px;
+  padding: 3px;
+}
+
+p {
+  color: var(--highlight-color);
+  font-family: var(--font-family);
+  padding: 3px;
+  margin-top: 2rem;
+}
+li {
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  padding: 3px;
+  margin-top: 0.5rem;
+}
+
+nav {
+  background-color: var(--lowlight-color);
+  color: var(--primary-color);
+  padding: 2px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 1px;
+}
+
+#nav-logo {
+  border-radius: 2px;
+  margin: 1px;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--lowlight-color);
+  border: var(--highlight-color);
+  border-radius: 5px;
+  font-family: var(--font-family);
+}
+
