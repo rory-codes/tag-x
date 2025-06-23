@@ -12,7 +12,7 @@
  <!--Preload & connect for google fonts to increase performance load time-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    
+
 <!--Favicons-->
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -62,10 +62,19 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
       </nav>
     </nav>
 </div>
-<!--landing page-->
-    <div id="landing-page">
-        landing page
-    </div>
+<!--Canvas to create to hide main content and show landing page-->
+    <canvas id="canvas"></canvas>
+
+    <!--Landing page-->
+    <section id="landing-page">
+      <div class="landing-info">
+        <h1>TAG X - ENTER NOW</h1>
+        <!--mt-3 to give breathing space-->
+        <button id="enter-btn" class="mt-3" type="button" aria-label="Enter">
+          Enter
+        </button>
+      </div>
+    </section>
 
  <main>
 <!--Introduction to Tag X-->
