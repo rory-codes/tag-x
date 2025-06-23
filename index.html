@@ -40,22 +40,22 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto"><!--ms-auto added to push navbar items to the right-->
               <li class="nav-item">
-                <a class="nav-link" href="#about"><p>[About TAG X]</p></a>
+                <a class="nav-link" href="#about">[About TAG X]</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#history"><p>[The history of tag]</p></a>
+                <a class="nav-link" href="#history">[The history of tag]</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#tag-x-rules"><p>[TAG X rulebook]</p></a>
+                <a class="nav-link" href="#tag-x-rules">[TAG X rulebook]</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#tag-x-adults"><p>[Get involved]</p></a>
+                <a class="nav-link" href="#tag-x-adults">[Get involved]</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#tag-x-juniors"><p>[Junior taggers]</p></a>
+                <a class="nav-link" href="#tag-x-juniors">[Junior taggers]</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link booking-button" href="#enquiry-form"><p>[Enquire now]</p></a><!--Added custom class to change appearance of booking button-->
+                <a class="nav-link booking-button" href="#enquiry-form">[Enquire now]</a><!--Added custom class to change appearance of booking button-->
               </li>
             </ul>
          </div>
@@ -83,24 +83,30 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
 <!--Introduction to Tag X-->
     <section id="tag-x-intro">
 <div id="about"> 
-<h1>TAG X</h1>
-<!--image for about section-->
-<img id="about-image" src="assets/images/tag-x-about.png" alt="Various people playing Tag X" loading="lazy"> <!--Lazy loading-->
 
-<!--Logo for about section-->
-<img id="about-logo" src="assets/images/tag-x-logo-2.png" alt="Tag X logo" loading="lazy"> <!--Lazy loading-->
+<!-- Full-width image -->
+<img id="about-image" src="assets/images/tag-x-about.png" alt="Various people playing Tag X" loading="lazy">
 
-<p>
-    <strong>TAG X</strong> is the exciting new way to experience rugby in the South East of England! Whether you're looking to stay active, meet new people, or just enjoy the game without the contact, Tag X offers a fun, fast-paced, and non-contact version of rugby that's perfect for all skill levels. <br><br>
-    <br>
+<!-- Two-column layout: logo + text -->
+<div class="about-content">
+  <!-- Left: logo -->
+  <div class="about-logo">
+    <img src="assets/images/tag-x-logo.png" alt="Tag X logo" loading="lazy">
+  </div>
 
-Games are played in 6- and 7-a-side formats, with options for both mixed gender and single gender matches — making it an inclusive and social way to enjoy sport. With no tackling and no scrums, Tag X focuses on agility, teamwork, and strategy, offering a safe environment to get fit and have fun.<br><br><br>
+  <!-- Right: text and button -->
+  <div class="about-text">
+    <p>
+      <strong>TAG X</strong> is the exciting new way to experience rugby in the South East of England! Whether you're looking to stay active, meet new people, or just enjoy the game without the contact, Tag X offers a fun, fast-paced, and non-contact version of rugby that's perfect for all skill levels. <br><br>
 
-Whether you're a seasoned player or brand new to the game, Tag X is your chance to enjoy rugby in a whole new way. Play Smart. Play Fast. <strong>Play Tag X!</strong>
-</p>
-<button>Enquire</button>
+      Games are played in 6- and 7-a-side formats, with options for both mixed gender and single gender matches — making it an inclusive and social way to enjoy sport. With no tackling and no scrums, Tag X focuses on agility, teamwork, and strategy, offering a safe environment to get fit and have fun. <br><br><br>
 
+      Whether you're a seasoned player or brand new to the game, Tag X is your chance to enjoy rugby in a whole new way. Play Smart. Play Fast. <strong>Play Tag X!</strong>
+    </p>
+    <button>Enquire</button>
+  </div>
 </div>
+
 
 <!--History section-->
 <div id="history">
@@ -256,6 +262,7 @@ Whether you're a seasoned player or brand new to the game, Tag X is your chance 
     Whether you're an adult looking for a new way to stay active or a junior player eager to learn the game, Tag X has something for everyone. Join us for a fun, fast-paced, and non-contact version of rugby that promotes fitness, teamwork, and enjoyment.
   <!-- Tag-X (Adults) Card -->
   <div id="tag-x-adults">
+    <img src="assets/images/adult-tag-card.jpg" alt="Tag X logo" loading="lazy">
     <h3>Tag-X (Adults)</h3>
     <p>
       A fast, fun, and social non-contact version of rugby for adults of all skill levels.
@@ -266,6 +273,9 @@ Whether you're a seasoned player or brand new to the game, Tag X is your chance 
 
   <!-- Junior Taggers Card -->
   <div id="tag-x-juniors">
+    <!--Card image-->
+    <img src="assets/images/junior-tag-card-image.jpg" alt="Tag X logo" loading="lazy">
+    <!--Card content-->
     <h3>Junior Tag X</h3>
     <p>
       Tag Rugby designed just for kids! Learn the game in a safe and energetic environment.
