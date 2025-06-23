@@ -22,11 +22,42 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
 <!-- CSS -->
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
+<!--Navbar added using bootstrap-->
 <body>
+  <div id="navbar-container">
     <nav>
-
+<nav id="navigation" class="navbar navbar-expand-lg fixed-top"> <!--bg-body-tertiary class removed to change background color of navbar. fixed-top added to ensure navbar is fixed to the top of the screen-->
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/images/tag-x-logo-1.png" alt="Tag X logo (Takes user to home page when clicked)" class="nav-logo" loading="lazy"> <!--Logo created using canva and imported--><!--Lazy loading-->
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto"><!--ms-auto added to push navbar items to the right-->
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Tag x</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#history">The history of tag</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tag-x-rules">TAG X rulebook</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Tag-x-adults">Get involved</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Tag-x-juniors">Junior taggers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link booking-button" href="#enquiry-form">Enquire now</a><!--Added custom class to change appearance of booking button-->
+              </li>
+            </ul>
+         </div>
+      </nav>
     </nav>
-
+</div>
 <!--landing page-->
     <div id="landing-page">
         landing page
@@ -34,7 +65,7 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
 
  <main>
 <!--Introduction to Tag X-->
-    <section id="tag-x">
+    <section id="tag-x-intro">
 <div id="about"> 
 <h1>Tag X</h1>
 <p>
@@ -44,7 +75,7 @@ Games are played in 6- and 7-a-side formats, with options for both mixed gender 
 
 Whether you're a seasoned player or brand new to the game, Tag X is your chance to enjoy rugby in a whole new way.
 </p>
-<button></button>
+<button>Enquire</button>
 </div>
 <!--History section-->
 <div id="history">
@@ -74,7 +105,7 @@ Whether you're a seasoned player or brand new to the game, Tag X is your chance 
 
 </div>
 <!--Rules section-->
-<div id="rules">How to play Tag X & rules
+<div id="tag-x-rules">
 <h2>Tag X - How the Game Works</h2>
 <p>
     The aim of Tag X is to score more points than the opposing team by full time. Points are earned by scoring tries, which happens when a player places the ball on or over the try line.
@@ -195,7 +226,7 @@ Whether you're a seasoned player or brand new to the game, Tag X is your chance 
 <div id="play-tag-x">
 
   <!-- Tag-X (Adults) Card -->
-  <div class="tag-x-adults">
+  <div id="tag-x-adults">
     <h3>Tag-X (Adults)</h3>
     <p>
       A fast, fun, and social non-contact version of rugby for adults of all skill levels.
@@ -205,7 +236,7 @@ Whether you're a seasoned player or brand new to the game, Tag X is your chance 
   </div>
 
   <!-- Junior Taggers Card -->
-  <div class="tag-x-juniors">
+  <div id="tag-x-juniors">
     <h3>Junior Tag X</h3>
     <p>
       Tag Rugby designed just for kids! Learn the game in a safe and energetic environment.
@@ -215,8 +246,9 @@ Whether you're a seasoned player or brand new to the game, Tag X is your chance 
   </div>
   </div>
 
-<div id="enquiry">
-    <div class="enquiry-form">
+  
+<!--Enquiry form-->
+    <div id="enquiry-form">
   <form id="enquiry-form">
     <label for="name">Full Name:</label>
     <input type="text" id="name" name="name" required>
@@ -230,7 +262,6 @@ Whether you're a seasoned player or brand new to the game, Tag X is your chance 
     <button type="submit">Submit</button>
   </form>
 </div>
-  </div>
     </section>
  </main>
    
