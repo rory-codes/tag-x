@@ -49,7 +49,15 @@ li {
   padding: 3px;
   margin-top: 0.5rem;
 }
+button {
+  background-color: var(--primary-color);
+  color: var(--lowlight-color);
+  border: 2px solid var(--secondary-color);
+  border-radius: 5px;
+  font-family: var(--font-family);
+}
 
+/* Navigation styles */
 nav {
   background-color: var(--lowlight-color);
   color: var(--primary-color);
@@ -68,13 +76,7 @@ nav {
   margin: 1px;
 }
 
-button {
-  background-color: var(--primary-color);
-  color: var(--lowlight-color);
-  border: 2px solid var(--secondary-color);
-  border-radius: 5px;
-  font-family: var(--font-family);
-}
+/* About section styles */
 
 #about-image {
   width: 100%;
@@ -109,6 +111,32 @@ button {
 
 .about-text {
   flex: 1 1 50%;
+}
+
+/* carousel styles */
+html, body, .stage, .ring, .img {
+  width:100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  user-select:none;
+}
+
+html, body, .stage {
+  overflow:hidden;
+  background:#000;  
+}
+
+div, svg {
+  position: absolute;
+}
+
+.container {
+  perspective: 2000px;
+  width: 300px;
+  height: 400px;  
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
 }
 
 /* Media Queries */
