@@ -122,6 +122,33 @@ nav {
   border: none;
   border-radius: 5px; 
 }
+/* Enquiry section styles */
+#enquiry-section  {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: var(--lowlight-color);
+  border: 2px solid var(--secondary-color);
+  border-radius: 12px;
+  font-family: var(--font-family);
+}
+#enquiry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: var(--highlight-color);
+  margin: 2px;
+  font-family: var(--font-family);
+}
+#enquiry-btn {
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--secondary-color);
+  color: var(--lowlight-color);
+  box-shadow: 0 0.5px 0.5px var(--primary-color);
+  border-radius: 5px; 
+}
 /* CSS for card section*/
 .card-row {
   display: flex;
@@ -166,6 +193,4 @@ nav {
   .about-logo img {
     margin: 0 auto;
   }
-
-
 }
