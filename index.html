@@ -68,6 +68,7 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
     <!--Landing page-->
     <section id="landing-page">
       <div class="landing-info">
+        <img src="assets/images/tag-x-logo-3.png" alt="Tag X logo (Takes user to home page when clicked)" id="enquiry-logo" loading="lazy"> <!--Logo created using canva and imported--><!--Lazy loading-->
         <h1> TAG X</h1>
         <p>Play Smart</p>
         <p>Play Fast.</p> 
@@ -111,8 +112,8 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
 <!--History section-->
 <div id="history">
 <h2>History of Tag Rugby</h2>
-  <p>Tag Rugby originated in the late 20th century as a safer, non-contact variation of traditional rugby. Initially designed as a training activity, it became popular for use in small spaces and on hard surfaces. While the precise origin is debated, it's widely believed that the sport began in Gibraltar due to the absence of grass pitches, before being formalized in England by Nick Leonard as a structured sport for school children.</p>
-
+  <div><p>Tag Rugby originated in the late 20th century as a safer, non-contact variation of traditional rugby. Initially designed as a training activity, it became popular for use in small spaces and on hard surfaces. While the precise origin is debated, it's widely believed that the sport began in Gibraltar due to the absence of grass pitches, before being formalized in England by Nick Leonard as a structured sport for school children.</p>
+<div id="history-content">
   <h3>Timeline of Development</h3>
   <ul id="history-dropdown">
     <li><strong>Late 1970s - Early 1980s:</strong> The Gibraltar Rugby Union adapted a form of rugby suitable for hard ground with limited space.</li>
@@ -133,8 +134,9 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
 <ul>
   <li>Established in 2025. Tag X looks to continue what other organisations are already doing and add the growth and popularity of the sport.</li>
 </ul>
-
 </div>
+</div>
+
 <!--Rules section-->
 <div id="tag-x-rules">
 <h2>Tag X - How the Game Works</h2>
@@ -284,7 +286,7 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
           Tag Rugby designed just for kids! Learn the game in a safe and energetic environment.
           Open to young players of all abilities.
         </p>
-        <button>Enquire</button>
+        <button class="mt-4">Enquire</button>
       </div>
 
     </div>
@@ -294,10 +296,17 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
   
 <!--Enquiry form-->
 <div id="enquiry-section">
+  <!--logo-->
+  <img src="assets/images/tag-x-logo-3.png" alt="Tag X logo (Takes user to home page when clicked)" id="enquiry-logo" loading="lazy"> <!--Logo created using canva and imported--><!--Lazy loading-->
+  
   <h4>Enquire Now</h4>
+  
   <p>Interested in joining <strong>TAG X?</strong> Fill out the form below to get started!</p>
+  
   <p>Whether you're an adult looking to play or a junior player eager to learn, we want to hear from you! Please fill out the form below with your details, and we'll get back to you as soon as possible.</p>
+  
   <p>We look forward to welcoming you to the <strong>TAG X</strong> community!</p>
+  
   <form id="enquiry-form">
     <label for="name">Full Name:</label>
     <input type="text" id="name" name="name" required>
@@ -326,6 +335,7 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
   src="https://code.jquery.com/jquery-3.7.1.js"
   integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
   crossorigin="anonymous"></script>
+  
     <!-- Javascript -->
 <script src="scripts/tag-x.js"></script>
 
