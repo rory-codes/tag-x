@@ -12,6 +12,8 @@ beforeAll(() => {
     document.body.innerHTML = fileContents;
 });
 
-test ('Jest should pass 1 test', () => {
-    expect(1 + 1).toBe(2);
+//Creates mock HTML to run before each test
+beforeEach(() => {
+    document.body.innerHTML = ``;
+    
 });
