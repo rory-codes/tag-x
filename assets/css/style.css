@@ -57,6 +57,11 @@ button {
   box-shadow: var(--highlight-color);
 }
 
+/* JS Global styles */
+.hidden {
+  display: none;
+}
+
 /* Navigation styles */
 #navigation {
   background-color: var(--lowlight-color);
