@@ -2,6 +2,9 @@
  * @jest-environment jsdom
  */
 
+const $ = require('jquery');
+global.$ = $;
+
 //Import the function to be tested
 const {  } = require('../tag-x');
 
@@ -15,5 +18,5 @@ beforeAll(() => {
 //Creates mock HTML to run before each test
 beforeEach(() => {
     document.body.innerHTML = ``;
-    
+
 });
