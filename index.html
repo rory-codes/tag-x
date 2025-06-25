@@ -29,13 +29,12 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
 <!--Navbar added using bootstrap-->
 <body>
   <div id="navbar-container">
-    <nav>
-<nav id="navigation" class="navbar navbar-expand-lg"> <!--bg-body-tertiary class removed to change background color of navbar. fixed-top removed-->
+<nav id="navigation" class="navbar navbar-expand-lg hidden"> <!--bg-body-tertiary class removed to change background color of navbar. fixed-top removed-->
           <a class="navbar-brand" href="index.html">
             <img src="assets/images/tag-x-logo-1.png" alt="Tag X logo (Takes user to home page when clicked)" id="nav-logo" loading="lazy"> <!--Logo created using canva and imported--><!--Lazy loading-->
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+            <i class="fa fa-bars" aria-hidden="true"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto"><!--ms-auto added to push navbar items to the right-->
@@ -43,10 +42,13 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
                 <a class="nav-link" href="#about">[About TAG X]</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#history">[The history of tag]</a>
+                <a class="nav-link" href="#carousel">[Gallery]</a><!--Added custom class to change appearance of booking button-->
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#tag-x-rules">[TAG X rulebook]</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#history">[The history of tag]</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#tag-x-adults">[Play TAG X]</a>
@@ -55,12 +57,11 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
                 <a class="nav-link" href="#tag-x-juniors">[Junior taggers]</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link booking-button" href="#enquiry-form">[Enquire now]</a><!--Added custom class to change appearance of booking button-->
+                <a class="nav-link" href="#carousel">[Gallery]</a><!--Added custom class to change appearance of booking button-->
               </li>
             </ul>
          </div>
       </nav>
-    </nav>
 </div>
 <!--Canvas to create to hide main content and show landing page-->
     <canvas id="canvas"></canvas>
@@ -69,7 +70,6 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
     <section id="landing-page">
       <div class="landing-info">
         <img src="assets/images/tag-x-logo-3.png" alt="Tag X logo (Takes user to home page when clicked)" id="enquiry-logo" loading="lazy"> <!--Logo created using canva and imported--><!--Lazy loading-->
-        <h1> TAG X</h1>
         <p>Play Smart</p>
         <p>Play Fast.</p> 
         <p>Play Tag X</p>
@@ -83,7 +83,7 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
  <main>
 
 <!--Introduction to Tag X-->
-<section id="tag-x-intro" class="hidden">
+<section id="tag-x-intro"  class="hidden">
 <div id="about"> 
 
 <!-- Full-width image -->
@@ -92,6 +92,7 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
 
 <!-- Two-column layout: logo + text -->
 <div class="about-content">
+  
   <!-- Left: logo -->
   <div class="about-logo">
     <img src="assets/images/tag-x-logo.png" alt="Tag X logo" loading="lazy">
@@ -106,42 +107,47 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
 
       Whether you're a seasoned player or brand new to the game, Tag X is your chance to enjoy rugby in a whole new way. Play Smart. Play Fast. <strong>Play Tag X!</strong>
     </p>
-    <button id="about-btn">Enquire</button>
+    <button id="about-btn">Find out more</button>
+    <button id="play-tag-x-btn">Play TAG X</button>
   </div>
 </div>
 </section>
 
-
-<!--History section-->
-<div id="history" class="hidden">
-<h2>History of Tag Rugby</h2>
-  <div><p>Tag Rugby originated in the late 20th century as a safer, non-contact variation of traditional rugby. Initially designed as a training activity, it became popular for use in small spaces and on hard surfaces. While the precise origin is debated, it's widely believed that the sport began in Gibraltar due to the absence of grass pitches, before being formalized in England by Nick Leonard as a structured sport for school children.</p>
-<div id="history-content">
-  <h3>Timeline of Development</h3>
-  <ul id="history-dropdown">
-    <li><strong>Late 1970s - Early 1980s:</strong> The Gibraltar Rugby Union adapted a form of rugby suitable for hard ground with limited space.</li>
-    <li><strong>1983:</strong> Sportswriter Terry Godwin noted that tag rugby was already played in Gibraltar by navy personnel and locals.</li>
-    <li><strong>1990:</strong> Nick Leonard, a PE teacher in England, established official rules, likely influenced by naval games seen in Gibraltar.</li>
-    <li><strong>1991:</strong> Leonard hosted the first school tag rugby festival in Plymouth, UK.</li>
-    <li><strong>1992:</strong> In Australia, Perry Haddock launched "Oztag" while coaching a St George under-20 team.</li>
-  </ul>
-
-  <h3>Growth and International Spread</h3>
-  <ul>
-    <li>Tag Rugby gained massive popularity in Australia, reaching over 200,000 participants.</li>
-    <li>The sport later expanded to New Zealand and Ireland.</li>
-    <li><strong>2009:</strong> Three Australians, including Alistair Davis, founded <strong>Try Tag Rugby</strong> in London, starting regular league competitions.</li>
-    <li>Try Tag Rugby has since expanded throughout England and Scotland, developing local franchises and national reach.</li>
-  </ul>
-<h3>Tag X</h3>
-<ul>
-  <li>Established in 2025. Tag X looks to continue what other organisations are already doing and add the growth and popularity of the sport.</li>
-</ul>
+<section id="carousel"  class="hidden">
+        <div>
+          <div class="stage">   
+<div class="container-carousel">
+  <div class="ring">
+    <div class="carousel-img">
+      <img src="assets/images/tag-x-carousel-1.png" alt="Tag X player running with the ball" loading="lazy">
+    </div>
+    <div class="carousel-img">
+      <img src="assets/images/tag-x-carousel-2.png" alt="Tag X players playing tag x" loading="lazy">
+    </div>
+    <div class="carousel-img">
+      <img src="assets/images/tag-x-carousel-3.png" alt="Tag X players playing tag x" loading="lazy">
+    </div>
+    <div class="carousel-img">
+      <img src="assets/images/tag-x-carousel-4.png" alt="Tag X players playing tag x" loading="lazy">
+    </div>
+    <div class="carousel-img">
+      <img src="assets/images/tag-x-carousel-5.png" alt="Tag X players playing tag x" loading="lazy">
+    </div>
+    <div class="carousel-img">
+      <img src="assets/images/tag-x-carousel-6.png" alt="Tag X players playing tag x" loading="lazy">
+    </div>
+    <div class="carousel-img">
+      <img src="assets/images/tag-x-carousel-7.png" alt="Tag X players playing tag x" loading="lazy">      
+    </div>
+  </div>
 </div>
+
 </div>
+        </div>
+    </section>
 
 <!--Rules section-->
-<div id="tag-x-rules" class="hidden">
+<section id="tag-x-rules"  class="hidden">
 <h2>Tag X - How the Game Works</h2>
 <p>
     The aim of Tag X is to score more points than the opposing team by full time. Points are earned by scoring tries, which happens when a player places the ball on or over the try line.
@@ -240,27 +246,38 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
   </ul>
 
 </div>
-</div>
+</section>
 
-    <section id="carousel" class="hidden">
-        <div>
-          <div class="stage">
-  
-  
-<div class="container">
-  <div class="ring">
-    <div class="img"></div>
-    <div class="img"></div>
-    <div class="img"></div>
-    <div class="img"></div>
-  </div>
-</div>
+<!--History section-->
+<section id="history"  class="hidden">
+<h2>History of Tag Rugby</h2>
+  <div><p>Tag Rugby originated in the late 20th century as a safer, non-contact variation of traditional rugby. Initially designed as a training activity, it became popular for use in small spaces and on hard surfaces. While the precise origin is debated, it's widely believed that the sport began in Gibraltar due to the absence of grass pitches, before being formalized in England by Nick Leonard as a structured sport for school children.</p>
+<div id="history-content">
+  <h3>Timeline of Development</h3>
+  <ul id="history-dropdown">
+    <li><strong>Late 1970s - Early 1980s:</strong> The Gibraltar Rugby Union adapted a form of rugby suitable for hard ground with limited space.</li>
+    <li><strong>1983:</strong> Sportswriter Terry Godwin noted that tag rugby was already played in Gibraltar by navy personnel and locals.</li>
+    <li><strong>1990:</strong> Nick Leonard, a PE teacher in England, established official rules, likely influenced by naval games seen in Gibraltar.</li>
+    <li><strong>1991:</strong> Leonard hosted the first school tag rugby festival in Plymouth, UK.</li>
+    <li><strong>1992:</strong> In Australia, Perry Haddock launched "Oztag" while coaching a St George under-20 team.</li>
+  </ul>
 
+  <h3>Growth and International Spread</h3>
+  <ul>
+    <li>Tag Rugby gained massive popularity in Australia, reaching over 200,000 participants.</li>
+    <li>The sport later expanded to New Zealand and Ireland.</li>
+    <li><strong>2009:</strong> Three Australians, including Alistair Davis, founded <strong>Try Tag Rugby</strong> in London, starting regular league competitions.</li>
+    <li>Try Tag Rugby has since expanded throughout England and Scotland, developing local franchises and national reach.</li>
+  </ul>
+<h3>Tag X</h3>
+<ul>
+  <li>Established in 2025. Tag X looks to continue what other organisations are already doing and add the growth and popularity of the sport.</li>
+</ul>
 </div>
-        </div>
-    </section>
+</section>
+
     
-    <section id="get-involved"  class="hidden">
+<section id="get-involved"  class="hidden">
   <div id="play-tag-x">
     <h1>Get Involved with Tag X</h1>
     <p>
@@ -271,26 +288,26 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
     <div class="card-row">
 
       <!-- Tag-X (Adults) Card -->
-      <div class="card" id="tag-x-adults">
-        <img src="assets/images/adult-tag-card.jpg" alt="Tag X adults player playing tag x" loading="lazy">
+      <section class="card" id="tag-x-adults">
+        <img src="assets/images/adult-tag-card.png" alt="Tag X adults player playing tag x" loading="lazy">
         <h3>Tag-X (Adults)</h3>
         <p>
           A fast, fun, and social non-contact version of rugby for adults of all skill levels.
           Get fit, make friends, and enjoy the game - no tackles required!
         </p>
         <button>Enquire</button>
-      </div>
+      </section>
 
       <!-- Junior Taggers Card -->
-      <div class="card" id="tag-x-juniors">
-        <img src="assets/images/junior-tag-card-image.jpg" alt="Tag X juniors player playing tag x" loading="lazy">
+      <section class="card" id="tag-x-juniors">
+        <img src="assets/images/junior-tag-card-image.png" alt="Tag X juniors player playing tag x" loading="lazy">
         <h3>Junior Tag X</h3>
         <p>
           Tag Rugby designed just for kids! Learn the game in a safe and energetic environment.
           Open to young players of all abilities.
         </p>
         <button class="mt-4">Enquire</button>
-      </div>
+      </section>
 
     </div>
   </div>
