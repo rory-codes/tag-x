@@ -170,6 +170,25 @@ button {
   border: none;
   border-radius: 5px;
 }
+/* Rules section styles */
+/* Hide rules initially */
+.rules-hidden {
+  display: none;
+  transition: all 0.3s ease;
+}
+
+/*hover effect to h3s to indicate interactivity */
+#tag-x-rules h3 {
+  cursor: pointer;
+  color: var(--highlight-color);
+  position: relative;
+}
+
+#tag-x-rules h3::after {
+  content: " ▼";
+  font-size: 0.8em;
+  color: #555;
+}
 /* Enquiry section styles */
 #enquiry-section {
   max-width: 600px;

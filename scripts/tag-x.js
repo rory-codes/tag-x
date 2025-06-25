@@ -39,14 +39,21 @@ const aboutSection = function () {
   $("#tag-x-intro").removeClass("hidden");
 }   
 
-$(document).ready(function () {
-  $('#about-btn').on('click', function () {
-    $('#carousel, #tag-x-rules, #history').removeClass('hidden');
-  });
-});
 
-$(document).ready(() => {
-    $('#play-tag-x-btn').on('click', function (e) {
+$('#about-btn').on('click', function () {
+    $('#carousel, #tag-x-rules, #history').removeClass('hidden');
+
+    // Smooth scroll to the about section
+    $('html, body').animate({
+            scrollTop: $('#tag-x-rules').offset().top
+        }, 800); // 800ms scroll duration
+ });
+
+
+
+
+
+$('#play-tag-x-btn').on('click', function (e) {
         e.preventDefault(); // Prevent any default link behavior
 
 
@@ -57,8 +64,10 @@ $(document).ready(() => {
         $('html, body').animate({
             scrollTop: $('#get-involved').offset().top
         }, 800); // 800ms scroll duration
-    });
 });
+
+
+// Enquiry form script for Tag-X
 
 $("#card-booking-btn").on("click", function (e) {
   e.preventDefault(); // Prevent default link behavior
@@ -72,3 +81,14 @@ $("#card-booking-btn").on("click", function (e) {
         }, 800); // 800ms scroll duration
     });
  
+// Rules section script for Tag-X
+ // Initially hide all rule lists
+  $('#tag-x-rules ul').addClass('rules-hidden');
+
+  // Toggle visibility of the <ul> when the corresponding <h3> is clicked
+  $('#tag-x-rules h3').on('click', function () {
+    const $nextList = $(this).next('ul');
+    
+    // Toggle only the clicked rule's content
+    $nextList.slideToggle().toggleClass('rules-hidden');
+  });
