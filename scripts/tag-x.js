@@ -19,42 +19,14 @@ const enterBtnClick = function () {
 // Call function for event listener
 enterBtnClick();
 
-// Export functions (if using CommonJS for testing)
+
+
+/** THIS STAYS AT THE END OF THE FILE 
+ * ADD FUCTIONS TO EXPORT TO TEST FILE */
+// Export functions 
 if (typeof module !== "undefined") {
   module.exports = {
     enterBtn,
     enterBtnClick,
   };
 }
-
-// About section script for Tag-X
-const aboutSection = function () {
-  // Hide elements
-  $("#landing-page, #canvas").hide();
-
-  // Show navbar
-  $("#navigation").removeClass("hidden");
-
-  // Show the about section
-  $("#tag-x-intro").removeClass("hidden");
-}   
-
-$(document).ready(function () {
-  $('#about-btn').on('click', function () {
-    $('#carousel, #tag-x-rules, #history').removeClass('hidden');
-  });
-});
-
-$(document).ready(function () {
-  $('#play-tag-x-btn').on('click', function (e) {
-    e.preventDefault(); // Prevent any default link behavior
-
-    // Remove 'hidden' class from cards and enquiry form
-    $('#get-involved').removeClass('hidden');
-
-    // Smooth scroll to the card section
-    $('html, body').animate({
-      scrollTop: $('#get-involved').offset().top
-    }, 800); // 800ms scroll duration
-  });
-});
