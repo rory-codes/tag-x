@@ -311,6 +311,12 @@ button {
   border-radius: 5px;
   box-shadow: 0 0.5px 0.5px var(--primary-color);
 }
+/* Hidden adult card info */
+.card-extra-info-adult p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: var(--highlight-color); 
+}
 
 /* Hidden junior card info */
 .card-extra-info p {
@@ -318,6 +324,7 @@ button {
   font-size: 1rem;
   color: var(--primary-color); /* Use your site's variable or fallback */
 }
+
 
 /* carousel styles */
 

@@ -156,6 +156,23 @@ $('#play-tag-x-btn-2').on('click', function (e) {
 });
 
 // Card section script for Tag-X
+
+// Add dynamic cotent for adult card 
+
+$('#venue-times-btn-adults').click(function () {
+    $('#tag-x-adults .card-extra-info-adult').html(`
+      <p><strong>Tandridge secondary school:</strong> Thursday: 6.00-7.30PM</p>
+      <p><strong>Tandrige rugby club:</strong> Tuesday: 6.30-8.00PM</p>
+    `);
+  });
+
+  $('#prices-btn-adults').click(function () {
+    $('#tag-x-adults .card-extra-info-adult').html(`
+      <p>8 weeks <strong>£75.</strong> The first session is <strong>Free</strong>. Leave your details below and someone will be in touch!</p>
+    `);
+  });
+
+// Add dynamic content for junior card
 $('#venue-times-btn').click(function () {
     $('.card-extra-info').html(`
       <p><strong>Tandridge primary school:</strong> Monday 3-4PM.</p>
@@ -169,3 +186,5 @@ $('#venue-times-btn').click(function () {
       <p>8 weeks <strong>£75.</strong> The first session is <strong>Free</strong>. Leave your details below and someone will be in touch!</p>
     `);
   });
+
+  
