@@ -186,4 +186,21 @@ $('#venue-times-btn').click(function () {
     `);
   });
 
-  
+  // Enquiry form script for Tag-X
+  // Card button to determine options for juniors on form
+  $('#card-booking-btn-jnr').click(function () {
+    // Hide adult options
+    $('.adult-option').hide();
+
+    // Show junior options
+    $('.junior-option').show();
+
+    // Show the enquiry section if it's hidden
+    $('#enquiry-section').removeClass('hidden');
+
+
+    // Smooth scroll to the enquiry form
+    $('html, body').animate({
+      scrollTop: $('#enquiry-section').offset().top
+    }, 600);
+  });
