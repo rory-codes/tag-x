@@ -142,10 +142,9 @@ $("#card-booking-btn-jnr").on("click", function (e) {
   );
 
    // Play Tag-X button script for Tag-X
-
+  // Prevent any default link behavior
 $('#play-tag-x-btn-2').on('click', function (e) {
     e.preventDefault();
-  // Prevent any default link behavior
   // Remove 'hidden' class from cards and enquiry form
     $('#get-involved').removeClass('hidden');
 
@@ -161,8 +160,8 @@ $('#play-tag-x-btn-2').on('click', function (e) {
 
 $('#venue-times-btn-adults').click(function () {
     $('#tag-x-adults .card-extra-info-adult').html(`
-      <p><strong>Tandridge secondary school:</strong> Thursday: 6.00-7.30PM</p>
-      <p><strong>Tandrige rugby club:</strong> Tuesday: 6.30-8.00PM</p>
+      <p><strong>Tandridge secondary school:</strong> Thursday: 6.00-7.30PM.</p>
+      <p><strong>Tandrige rugby club:</strong> Tuesday: 6.30-8.00PM.</p>
     `);
   });
 
@@ -177,7 +176,7 @@ $('#venue-times-btn').click(function () {
     $('.card-extra-info').html(`
       <p><strong>Tandridge primary school:</strong> Monday 3-4PM.</p>
       <p><strong>Tandridge secondary school:</strong> Wednesday 4-5PM.</p>
-      <p><strong>Tandridge secondary school:</strong> Thursday 5-6PM</p>
+      <p><strong>Tandridge secondary school:</strong> Thursday 5-6PM.</p>
     `);
   });
 
