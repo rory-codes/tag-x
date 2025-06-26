@@ -312,6 +312,13 @@ button {
   box-shadow: 0 0.5px 0.5px var(--primary-color);
 }
 
+/* Hidden junior card info */
+.card-extra-info p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: var(--primary-color); /* Use your site's variable or fallback */
+}
+
 /* carousel styles */
 
 .stage, .ring, .carousel-img {

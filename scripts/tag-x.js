@@ -155,3 +155,17 @@ $('#play-tag-x-btn-2').on('click', function (e) {
     }, 800); // 800ms scroll duration
 });
 
+// Card section script for Tag-X
+$('#venue-times-btn').click(function () {
+    $('.card-extra-info').html(`
+      <p><strong>Tandridge primary school:</strong> Monday 3-4PM.</p>
+      <p><strong>Tandridge secondary school:</strong> Wednesday 4-5PM.</p>
+      <p><strong>Tandridge secondary school:</strong> Thursday 5-6PM</p>
+    `);
+  });
+
+  $('#prices-btn').click(function () {
+    $('.card-extra-info').html(`
+      <p>8 weeks <strong>£75.</strong> The first session is <strong>Free</strong>. Leave your details below and someone will be in touch!</p>
+    `);
+  });
