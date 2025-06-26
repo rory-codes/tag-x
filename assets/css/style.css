@@ -209,7 +209,7 @@ button {
   position: relative;
 }
 
-#tag-x-rules h3:hover {
+#history h3:hover {
   color: var(--primary-color);
 }
 

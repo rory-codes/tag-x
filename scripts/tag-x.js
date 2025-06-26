@@ -41,7 +41,7 @@ const aboutSection = function () {
 
 //About section button script for Tag-X
 $('#about-btn').on('click', function () {
-    $('#carousel, #tag-x-rules, #history').removeClass('hidden');
+    $('#carousel, #tag-x-rules, #history, #get-involved, #enquiry-section').removeClass('hidden');
 
     // Smooth scroll to the about section
     $('html, body').animate({
@@ -127,6 +127,19 @@ $("#card-booking-btn-jnr").on("click", function (e) {
     // Toggle the class and slide animation
     $nextList.slideToggle(300).toggleClass('history-hidden');
   });
+
+ // Change text color on hover for history section
+  
+  $('#history p, #history li').hover(
+    function () {
+      // Mouse enter: change text color to white
+      $(this).css('color', '#ffffff');
+    },
+    function () {
+      // Mouse leave: revert text color to inherited/default
+      $(this).css('color', '');
+    }
+  );
 
    // Play Tag-X button script for Tag-X
 
