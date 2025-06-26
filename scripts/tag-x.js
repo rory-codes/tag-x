@@ -19,7 +19,7 @@ const enterBtnClick = function () {
 // Call function for event listener
 enterBtnClick();
 
-// Export functions (if using CommonJS for testing)
+// Export functions 
 if (typeof module !== "undefined") {
   module.exports = {
     enterBtn,
@@ -39,7 +39,7 @@ const aboutSection = function () {
   $("#tag-x-intro").removeClass("hidden");
 }   
 
-
+//About section button script for Tag-X
 $('#about-btn').on('click', function () {
     $('#carousel, #tag-x-rules, #history').removeClass('hidden');
 
@@ -54,9 +54,8 @@ $('#about-btn').on('click', function () {
 $('#play-tag-x-btn').on('click', function (e) {
     e.preventDefault(); // Prevent any default link behavior
 
-
         // Remove 'hidden' class from cards and enquiry form
-    $('#get-involved').removeClass('hidden');
+    $('#get-involved, #enquiry-section').removeClass('hidden');
 
         // Smooth scroll to the card section
     $('html, body').animate({
@@ -66,7 +65,6 @@ $('#play-tag-x-btn').on('click', function (e) {
 
 
 // Enquiry form script for Tag-X
-
 $("#card-booking-btn").on("click", function (e) {
   e.preventDefault(); // Prevent default link behavior
 
@@ -104,6 +102,20 @@ $("#card-booking-btn-jnr").on("click", function (e) {
     $nextList.slideToggle().toggleClass('rules-hidden');
   });
 
+  // Change text color on hover for rules section
+  
+  $('#tag-x-rules p, #tag-x-rules li').hover(
+    function () {
+      // Mouse enter: change text color to white
+      $(this).css('color', '#ffffff');
+    },
+    function () {
+      // Mouse leave: revert text color to inherited/default
+      $(this).css('color', '');
+    }
+  );
+
+
   //History section script for Tag-X
   // Initially hide all <ul> elements in #history
   $('#history ul').addClass('history-hidden');
@@ -129,3 +141,4 @@ $('#play-tag-x-btn-2').on('click', function (e) {
             scrollTop: $('#get-involved').offset().top
     }, 800); // 800ms scroll duration
 });
+

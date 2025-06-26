@@ -35,7 +35,7 @@ h5,
 h6 {
   color: var(--primary-color);
   font-family: var(--code-font-family);
-  margin: 3px;
+  margin: 2rem;
   padding: 3px;
 }
 
@@ -180,8 +180,12 @@ button {
 /*hover effect to h3s to indicate interactivity */
 #tag-x-rules h3 {
   cursor: pointer;
-  color: var(--highlight-color);
+  color: var(--secondary-color);
   position: relative;
+}
+
+#tag-x-rules h3:hover {
+  color: var(--primary-color);
 }
 
 #tag-x-rules h3::after {
@@ -203,6 +207,10 @@ button {
   color: var(--secondary-color);
   margin-top: 1.5rem;
   position: relative;
+}
+
+#tag-x-rules h3:hover {
+  color: var(--primary-color);
 }
 
 #history h3::after {
