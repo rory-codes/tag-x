@@ -41,7 +41,7 @@ const aboutSection = function () {
 
 //About section button script for Tag-X
 $('#about-btn').on('click', function () {
-    $('#carousel, #tag-x-rules, #history, #get-involved, #enquiry-section').removeClass('hidden');
+    $('#carousel, #tag-x-rules, #history, #get-involved').removeClass('hidden');
 
     // Smooth scroll to the about section
     $('html, body').animate({
@@ -55,7 +55,7 @@ $('#play-tag-x-btn').on('click', function (e) {
     e.preventDefault(); // Prevent any default link behavior
 
         // Remove 'hidden' class from cards and enquiry form
-    $('#get-involved, #enquiry-section').removeClass('hidden');
+    $('#get-involved').removeClass('hidden');
 
         // Smooth scroll to the card section
     $('html, body').animate({
@@ -152,7 +152,7 @@ $('#play-tag-x-btn-2').on('click', function (e) {
         // Smooth scroll to the card section
     $('html, body').animate({
             scrollTop: $('#get-involved').offset().top
-    }, 800); // 800ms scroll duration
+    }, 400); // 800ms scroll duration
 });
 
 // Card section script for Tag-X

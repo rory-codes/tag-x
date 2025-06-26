@@ -118,6 +118,24 @@ button {
   z-index: 1;
 }
 
+#enter-btn {
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--secondary-color);
+  color: var(--lowlight-color);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0.5px 0.5px var(--primary-color);
+}
+
+#enter-btn:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  box-shadow: 1 2px 4px var(--highlight-color);
+}
+
 /* About section styles */
 #tag-x-intro {
   margin-top:  2rem;
@@ -170,6 +188,15 @@ button {
   border: none;
   border-radius: 5px;
 }
+
+#about-btn:hover, #play-tag-x-btn:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  box-shadow: 1 1px 1px var(--highlight-color);
+}
+
 /* Rules section styles */
 /* Hide rules initially */
 .rules-hidden {
@@ -191,7 +218,7 @@ button {
 #tag-x-rules h3::after {
   content: " ▼";
   font-size: 0.8em;
-  color: #555;
+  color: var(--primary-color);
 }
 
 /* History section styles */
@@ -223,8 +250,8 @@ button {
 /*Play tag x button 2 styles*/
 #play-tag-x-btn-2 {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: end;
+  align-items: flex-end;
   margin: 2rem;
   padding: 0.5rem 1rem;
   background-color: var(--secondary-color);
@@ -232,7 +259,14 @@ button {
   border: none;
   border-radius: 5px;
   box-shadow: 0 0.5px 0.5px var(--primary-color);
+}
 
+#play-tag-x-btn-2:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  box-shadow: 1 1px 1px var(--highlight-color);
 }
 /* Enquiry section styles */
 #enquiry-section {
@@ -301,6 +335,13 @@ button {
   border-radius: 5px;
   box-shadow: 0 0.5px 0.5px var(--primary-color);
 }
+#card-booking-btn:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  box-shadow: 1 2px 4px var(--highlight-color);
+}
 
 #card-booking-btn-jnr {
   margin-top: 1rem;
@@ -310,6 +351,34 @@ button {
   border: none;
   border-radius: 5px;
   box-shadow: 0 0.5px 0.5px var(--primary-color);
+}
+#card-booking-btn-jnr:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  box-shadow: 1 2px 4px var(--highlight-color);
+}
+
+.card-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  color: var(--lowlight-color);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0.5px 0.5px var(--primary-color);
+}
+/* Card hover effect */
+.card-btn:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 4px var(--primary-color);
+  background-color: var(--secondary-color);
+  cursor: pointer;
 }
 /* Hidden adult card info */
 .card-extra-info-adult p {
