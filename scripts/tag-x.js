@@ -49,21 +49,19 @@ $('#about-btn').on('click', function () {
         }, 800); // 800ms scroll duration
  });
 
-
-
-
+ // Play Tag-X button script for Tag-X
 
 $('#play-tag-x-btn').on('click', function (e) {
-        e.preventDefault(); // Prevent any default link behavior
+    e.preventDefault(); // Prevent any default link behavior
 
 
         // Remove 'hidden' class from cards and enquiry form
-        $('#get-involved').removeClass('hidden');
+    $('#get-involved').removeClass('hidden');
 
         // Smooth scroll to the card section
-        $('html, body').animate({
+    $('html, body').animate({
             scrollTop: $('#get-involved').offset().top
-        }, 800); // 800ms scroll duration
+    }, 800); // 800ms scroll duration
 });
 
 
@@ -81,6 +79,19 @@ $("#card-booking-btn").on("click", function (e) {
         }, 800); // 800ms scroll duration
     });
  
+//Junior booking button script for Tag-X
+$("#card-booking-btn-jnr").on("click", function (e) {
+  e.preventDefault(); // Prevent default link behavior
+
+  // Show the enquiry form
+  $("#enquiry-section").removeClass("hidden");
+  
+    // Smooth scroll to the enquiry section
+  $('html, body').animate({
+            scrollTop: $('#enquiry-section').offset().top
+        }, 800); // 800ms scroll duration
+    });
+
 // Rules section script for Tag-X
  // Initially hide all rule lists
   $('#tag-x-rules ul').addClass('rules-hidden');
@@ -92,3 +103,29 @@ $("#card-booking-btn").on("click", function (e) {
     // Toggle only the clicked rule's content
     $nextList.slideToggle().toggleClass('rules-hidden');
   });
+
+  //History section script for Tag-X
+  // Initially hide all <ul> elements in #history
+  $('#history ul').addClass('history-hidden');
+
+  // Toggle visibility when an <h3> is clicked
+  $('#history h3').on('click', function () {
+    const $nextList = $(this).next('ul');
+    
+    // Toggle the class and slide animation
+    $nextList.slideToggle(300).toggleClass('history-hidden');
+  });
+
+   // Play Tag-X button script for Tag-X
+
+$('#play-tag-x-btn-2').on('click', function (e) {
+    e.preventDefault();
+  // Prevent any default link behavior
+  // Remove 'hidden' class from cards and enquiry form
+    $('#get-involved').removeClass('hidden');
+
+        // Smooth scroll to the card section
+    $('html, body').animate({
+            scrollTop: $('#get-involved').offset().top
+    }, 800); // 800ms scroll duration
+});

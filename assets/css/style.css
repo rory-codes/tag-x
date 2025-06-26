@@ -189,6 +189,43 @@ button {
   font-size: 0.8em;
   color: #555;
 }
+
+/* History section styles */
+/* Hide elements by default */
+.history-hidden {
+  display: none;
+  transition: all 0.3s ease;
+}
+
+/* Optional: Make <h3> headings look clickable */
+#history h3 {
+  cursor: pointer;
+  color: var(--secondary-color);
+  margin-top: 1.5rem;
+  position: relative;
+}
+
+#history h3::after {
+  content: " ▼";
+  font-size: 0.8em;
+  color: var(--primary-color);
+  margin-left: 5px;
+}
+
+/*Play tag x button 2 styles*/
+#play-tag-x-btn-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--secondary-color);
+  color: var(--lowlight-color);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0.5px 0.5px var(--primary-color);
+
+}
 /* Enquiry section styles */
 #enquiry-section {
   max-width: 600px;
@@ -257,6 +294,15 @@ button {
   box-shadow: 0 0.5px 0.5px var(--primary-color);
 }
 
+#card-booking-btn-jnr {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--secondary-color);
+  color: var(--lowlight-color);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0.5px 0.5px var(--primary-color);
+}
 
 /* carousel styles */
 
