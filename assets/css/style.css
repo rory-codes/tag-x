@@ -277,6 +277,15 @@ button {
   margin-top: 1.5rem;
   position: relative;
 }
+/*Wrapper for history button*/
+.history-button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
 
 #history h3:hover {
   color: var(--primary-color);
