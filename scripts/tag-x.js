@@ -41,7 +41,7 @@ const aboutSection = function () {
 
 //About section button script for Tag-X
 $('#about-btn').on('click', function () {
-    $('#carousel, #tag-x-rules, #history, #get-involved').removeClass('hidden');
+    $('#tagx-carousel, #tag-x-rules, #history, #get-involved').removeClass('hidden');
 
     // Smooth scroll to the about section
     $('html, body').animate({
@@ -156,7 +156,7 @@ $('#play-tag-x-btn-2').on('click', function (e) {
 
 // Card section script for Tag-X
 
-// Add dynamic cotent for adult card 
+// Dynamic content for adult card 
 
 $('#venue-times-btn-adults').click(function () {
     $('#tag-x-adults .card-extra-info-adult').html(`
@@ -171,7 +171,7 @@ $('#venue-times-btn-adults').click(function () {
     `);
   });
 
-// Add dynamic content for junior card
+// Dynamic content for junior card
 $('#venue-times-btn').click(function () {
     $('.card-extra-info').html(`
       <p><strong>Tandridge primary school:</strong> Monday 3-4PM.</p>
@@ -204,3 +204,68 @@ $('#venue-times-btn').click(function () {
       scrollTop: $('#enquiry-section').offset().top
     }, 600);
   });
+
+  // Card button to determine options for adults on form
+  $('#card-booking-btn').click(function () {
+    // Hide junior options
+    $('.junior-option').hide();
+
+    // Show adult options
+    $('.adult-option').show();
+
+    // Show the enquiry section if it's hidden
+    $('#enquiry-section').removeClass('hidden');
+
+    // Smooth scroll to the enquiry form
+    $('html, body').animate({
+      scrollTop: $('#enquiry-section').offset().top
+    }, 600);
+  });
+
+  // Javascript for carousel
+$(document).ready(function () {
+  const $track = $('#tagx-carousel .carousel-track');
+  const $slides = $('#tagx-carousel .carousel-img');
+  const slideCount = $slides.length;
+  let currentIndex = 0;
+  let interval;
+
+  function goToSlide(index) {
+    $track.css('transform', `translateX(-${index * 100}%)`);
+    currentIndex = index;
+  }
+
+  function nextSlide() {
+    const nextIndex = (currentIndex + 1) % slideCount;
+    goToSlide(nextIndex);
+  }
+
+  function prevSlide() {
+    const prevIndex = (currentIndex - 1 + slideCount) % slideCount;
+    goToSlide(prevIndex);
+  }
+
+  function startAutoScroll() {
+    interval = setInterval(nextSlide, 4000);
+  }
+
+  function stopAutoScroll() {
+    clearInterval(interval);
+  }
+
+  startAutoScroll();
+
+  $('#tagx-carousel .carousel-btn.next').click(function () {
+    stopAutoScroll();
+    nextSlide();
+    startAutoScroll();
+  });
+
+  $('#tagx-carousel .carousel-btn.prev').click(function () {
+    stopAutoScroll();
+    prevSlide();
+    startAutoScroll();
+  });
+
+  $('#tagx-carousel').hover(stopAutoScroll, startAutoScroll);
+});
