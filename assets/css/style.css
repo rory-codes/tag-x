@@ -177,16 +177,14 @@ button {
   flex: 1 1 50%;
 }
 
-#about-btn, #play-tag-x-btn  {
-  align-items: flex-end;
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
+#about-btn, #play-tag-x-btn {
+  padding: 0.75rem 1rem;
   background-color: var(--secondary-color);
   color: var(--lowlight-color);
   border: none;
   border-radius: 5px;
+  width: 100%; /* ensures equal sizing inside flex */
+  text-align: center;
 }
 
 #about-btn:hover, #play-tag-x-btn:hover {
@@ -194,7 +192,7 @@ button {
   transition: transform 0.3s ease;
   background-color: var(--primary-color);
   cursor: pointer;
-  box-shadow: 1 1px 1px var(--highlight-color);
+  box-shadow: 0 2px 5px var(--highlight-color);
 }
 
 /* About button alignment */
@@ -320,19 +318,20 @@ button {
   flex-wrap: wrap;
   gap: 2rem; /* space between the cards */
   justify-content: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  align-items: stretch; /* 👈 Ensures all cards stretch to equal height */
 }
 
 .card {
-  flex: 1 1 300px; /* responsive: grow, shrink, base width */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures spacing between content & buttons */
+  flex: 1 1 300px;
   max-width: 400px;
-  background-color: var(--lowlight-color);
   padding: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 4px 10px var(--primary-color);
   border: 2px solid var(--secondary-color);
-  text-align: center;
+  background-color: var(--lowlight-color);
 }
 
 .card img {
@@ -486,4 +485,12 @@ button {
   .about-logo img {
     margin: 0 auto;
   }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
+
+
