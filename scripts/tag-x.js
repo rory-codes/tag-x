@@ -27,6 +27,43 @@ if (typeof module !== "undefined") {
   };
 }
 
+// Nav links click handler
+// Generic navbar click handler
+$('#navigation a').on('click', function (e) {
+  e.preventDefault();
+
+  const targetId = $(this).attr('href');  // e.g., "#get-involved" or "#tag-x-intro"
+  const $target = $(targetId);
+
+  if ($target.length) {
+    // Unhide the section and any necessary parent containers
+    $target.removeClass('hidden');
+
+    // Special cases for nested or related visibility
+    if (targetId === '#get-involved') {
+      // Optional: Unhide anything wrapping or related to this section
+      $('#enquiry-section').removeClass('hidden'); // if needed
+    }
+
+    if (targetId === '#tagx-carousel') {
+      $('#tagx-carousel').removeClass('hidden');
+    }
+
+    if (targetId === '#tag-x-adults') {
+      $('#get-involved').removeClass('hidden');
+    }
+
+
+
+    // Scroll to the target section
+    $('html, body').animate({
+      scrollTop: $target.offset().top
+    }, 800);
+  } else {
+    console.warn('Target section not found:', targetId);
+  }
+});
+
 // About section script for Tag-X
 const aboutSection = function () {
   // Hide elements
@@ -45,7 +82,7 @@ $('#about-btn').on('click', function () {
 
     // Smooth scroll to the about section
     $('html, body').animate({
-            scrollTop: $('#tag-x-rules').offset().top
+            scrollTop: $('#tagx-carousel').offset().top
         }, 800); // 800ms scroll duration
  });
 
