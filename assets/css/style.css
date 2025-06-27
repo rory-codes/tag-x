@@ -145,7 +145,20 @@ button {
 #about-image {
   width: auto;
   height: auto;
-  max-height: 350px;
+  max-height: 270px;
+  display: block;
+  margin-bottom: 2rem;
+  margin: 1rem;
+  margin-left: auto;
+  padding: 1rem;
+  border: 2px solid var(--secondary-color);
+  border-radius: 1px;
+}
+
+#loading-image {
+  width: auto;
+  height: auto;
+  max-height: 320px;
   display: block;
   margin-bottom: 2rem;
   margin: 1rem;
@@ -177,6 +190,24 @@ button {
 
 .about-text {
   flex: 1 1 50%;
+}
+
+/* Logo alignment */
+.about-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.about-header img,
+.about-logo img {
+  max-height: 270px;
+  padding: 1rem;
+  border: 2px solid var(--secondary-color);
+  border-radius: 1px;
 }
 
 #about-btn, #play-tag-x-btn {
