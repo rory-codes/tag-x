@@ -53,8 +53,6 @@ $('#navigation a').on('click', function (e) {
       $('#get-involved').removeClass('hidden');
     }
 
-
-
     // Scroll to the target section
     $('html, body').animate({
       scrollTop: $target.offset().top
@@ -75,6 +73,7 @@ const aboutSection = function () {
   // Show the about section
   $("#tag-x-intro").removeClass("hidden");
 }   
+
 
 //About section button script for Tag-X
 $('#about-btn').on('click', function () {
@@ -306,3 +305,57 @@ $(document).ready(function () {
 
   $('#tagx-carousel').hover(stopAutoScroll, startAutoScroll);
 });
+
+// Form validaition script for Tag-X
+
+$('#enquiry-form').on('submit', function (e) {
+    e.preventDefault(); // Prevent default form submission
+
+    let isValid = true;
+    let errorMessages = [];
+
+    // Reset all styles
+    $('#enquiry-form input, #enquiry-form select').css('border', '');
+
+    const name = $('#name').val().trim();
+    const contact = $('#contact').val().trim();
+    const email = $('#email').val().trim();
+    const selectedOption = $('select.form-select:visible').val(); // Updated selector
+
+    // Validate name
+    if (!name) {
+      isValid = false;
+      $('#name').css('border', '2px solid red');
+      errorMessages.push('Full name is required.');
+    }
+
+    // Validate contact
+    const contactRegex = /^[0-9]{7,15}$/;
+    if (!contact || !contactRegex.test(contact)) {
+      isValid = false;
+      $('#contact').css('border', '2px solid red');
+      errorMessages.push('Please enter a valid contact number.');
+    }
+
+    // Validate email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email || !emailRegex.test(email)) {
+      isValid = false;
+      $('#email').css('border', '2px solid red');
+      errorMessages.push('Please enter a valid email address.');
+    }
+
+    // Validate visible dropdown
+    if (!selectedOption) {
+      $('select.form-select:visible').css('border', '2px solid red');
+      isValid = false;
+      errorMessages.push('Please select a venue and time.');
+    }
+
+    if (isValid) {
+      alert('Form submitted successfully!');
+      // Add actual submission or AJAX here
+    } else {
+      alert(errorMessages.join('\n'));
+    }
+  });
