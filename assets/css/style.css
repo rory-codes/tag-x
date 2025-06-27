@@ -197,6 +197,17 @@ button {
   box-shadow: 1 1px 1px var(--highlight-color);
 }
 
+/* About button alignment */
+.about-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.about-buttons button {
+  flex: 1;
+}
+
 /* Rules section styles */
 /* Hide rules initially */
 .rules-hidden {
