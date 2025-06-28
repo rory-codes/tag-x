@@ -3,6 +3,7 @@
 
 /*Root Variables*/
 :root {
+  /* Default (Dark Mode) */
   --primary-color: #ccd6dd;
   --secondary-color: #5097f4;
   --highlight-color: #fffffff6;
@@ -14,6 +15,8 @@
 /*non-specific styles*/
 body {
   background-color: var(--lowlight-color);
+  color: var(--highlight-color);
+   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1,
@@ -116,6 +119,12 @@ button {
   /* Puts content above canvas */
   position: relative;
   z-index: 1;
+
+  /* border ets */
+  padding: 2rem;
+  border: 2px solid var(--secondary-color);
+  border-radius: 12px;
+  color: var(--highlight-color);
 }
 
 #enter-btn {
@@ -319,6 +328,7 @@ button {
   cursor: pointer;
   box-shadow: 1 1px 1px var(--highlight-color);
 }
+
 /* Enquiry section styles */
 #enquiry-section {
   max-width: 600px;
@@ -352,6 +362,17 @@ button {
   background-color: var(--primary-color);
   cursor: pointer;
   box-shadow: 1 2px 4px var(--highlight-color);
+}
+
+/* Hover/focus states */
+button:hover, 
+button:focus, 
+#enquiry-success a:hover, 
+#enquiry-success a:focus {
+  background-color: white;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+  outline: none;
 }
 
 /* CSS for card section*/
@@ -509,7 +530,39 @@ button {
 }
 
 #tagx-carousel .carousel-btn:hover {
-  background: rgba(0, 0, 0, 0.8);
+  background: var(--lowlight-color);
+}
+
+/* 404 Page */
+#error {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures spacing between content & buttons */
+  flex: 1 1 300px;
+  max-width: 400px;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px var(--primary-color);
+  border: 2px solid var(--secondary-color);
+  background-color: var(--lowlight-color);
+  color: var(--highlight-color);
+}
+
+#error-btn {
+justify-content: center;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--secondary-color);
+  color: var(--lowlight-color);
+  box-shadow: 0 0.5px 0.5px var(--p);
+  border-radius: 5px;
+}
+#error-btn:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  box-shadow: 1 2px 4px var(--highlight-color);
 }
 
 /* Media Queries */

@@ -359,3 +359,18 @@ $('#enquiry-form').on('submit', function (e) {
       alert(errorMessages.join('\n'));
     }
   });
+
+ // Hide the enquiry form and show success section on form submission
+$(document).ready(function () {
+  $('#enquiry-form').on('submit', function (e) {
+    e.preventDefault();
+    console.log("Thank you! <br> We have recieved your message. <br> Someone from our team will be in touch");
+// Hide the enquiry form
+    $('#enquiry-section').addClass('hidden');
+
+    $('html, body').animate({
+      scrollTop: $('#about').offset().top
+    }, 1000);
+  });
+});
+
