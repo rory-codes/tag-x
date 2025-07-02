@@ -2,19 +2,22 @@
 // Function to hide landing page and show about section using jQuery
 const enterBtn = function () {
   // Hide elements
-  $("#landing-page, #canvas").hide();
+  
+  $("#landing-page, #canvas").addClass("hidden")fadeOut(800);
+
 
   // Show navbar
-  $("#navigation").removeClass("hidden");
+  $("#navigation").removeClass("hidden").fadeIn(800);
 
   // Show the about section
-  $("#tag-x-intro").removeClass("hidden");
+  $("#tag-x-intro").removeClass("hidden").fadeIn(800);
 };
 
 // Add event listener to the enter button
 const enterBtnClick = function () {
   $("#enter-btn").on("click", enterBtn);
 };
+
 
 // Call function for event listener
 enterBtnClick();
