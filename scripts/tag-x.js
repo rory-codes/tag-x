@@ -364,7 +364,7 @@ $('#enquiry-form').on('submit', function (e) {
     }
   });
 
- // Hide the enquiry form and show success section on form submission
+ // Hide the enquiry form and scroll up on form submission
 $(document).ready(function () {
   $('#enquiry-form').on('submit', function (e) {
     e.preventDefault();

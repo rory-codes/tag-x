@@ -349,17 +349,15 @@ button {
 }
 
 #enquiry-logo {
-   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1rem;
-  flex-wrap: wrap;
+ display: block;
+  margin: 0 auto 1.5rem auto;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  border: 2px solid var(--secondary-color);
+  border-radius: 1px;
 }
 
-#enquiry-logo img {
-  max-width: 150px;
-  height: auto;
-}
 
 /* Hover/focus states */
 button:hover, 
@@ -565,6 +563,13 @@ justify-content: center;
 }
 
 /* Media Queries */
+@media (max-width: 600px) {
+  #enquiry-logo {
+    max-width: 140px; /* reduce size on mobile */
+    padding: 0.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   .about-header {
     flex-direction: row;
