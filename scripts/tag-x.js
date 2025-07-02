@@ -2,9 +2,10 @@
 // Function to hide landing page and show about section using jQuery
 const enterBtn = function () {
   // Hide elements
-  
-  $("#landing-page, #canvas").addClass("hidden")fadeOut(800);
-
+    // Fade out landing and canvas, then add hidden class
+  $("#landing-page, #canvas").fadeOut(800, function () {
+    $(this).addClass("hidden");
+  });
 
   // Show navbar
   $("#navigation").removeClass("hidden").fadeIn(800);

@@ -66,7 +66,7 @@ button {
 
 /* JS Global styles */
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 /* Navigation styles */
@@ -150,38 +150,43 @@ button {
   box-shadow: 1 2px 4px var(--highlight-color);
 }
 
-/* About section styles */
+/* About Section Styles  */
 #tag-x-intro {
-  margin-top:  2rem;
-  margin-bottom: 2rem; 
+  margin: 2rem 0;
   padding: 1rem;
-}
-#about-image {
-  width: auto;
-  height: auto;
-  max-height: 270px;
-  display: block;
-  margin-bottom: 2rem;
-  margin: 1rem;
-  margin-left: auto;
-  padding: 1rem;
-  border: 2px solid var(--secondary-color);
-  border-radius: 1px;
 }
 
-#loading-image {
+/* Flex container for the about header section (images & logo) */
+.about-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.about-header img {
   width: auto;
+  max-width: 200px;
   height: auto;
   max-height: 320px;
-  display: block;
-  margin-bottom: 2rem;
-  margin: 1rem;
-  margin-left: auto;
   padding: 1rem;
   border: 2px solid var(--secondary-color);
-  border-radius: 1px;
+  border-radius: 2px;
 }
 
+/* Logo styling */
+.about-logo img {
+  width: 120px;
+  max-width: 100%;
+  height: auto;
+  border: none;
+  padding: 0;
+}
+
+
+/*  About text container */
 .about-content {
   display: flex;
   flex-wrap: wrap;
@@ -192,60 +197,31 @@ button {
   padding: 0 1rem;
 }
 
-.about-logo {
-  flex: 1 1 100%;
-  max-width: 400px;
-}
-
-.about-logo img {
-  width: 100%;
-  max-width: 180px; /* Constrain size */
-  height: auto;
-}
-
 .about-text {
-  flex: 1 1 50%;
+  flex: 1 1 100%;
 }
 
-/* Logo alignment */
-.about-header {
-  display: flex;
-  flex-direction: column; /* Stack vertically by default */
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
 
-.about-header img,
-.about-logo img {
-  width: 100px; 
-  height: auto;
-  max-height: 270px;
-  padding: 1rem;
-  border: 2px solid var(--secondary-color);
-  border-radius: 1px;
-}
-
+/* Buttons */
 #about-btn, #play-tag-x-btn {
   padding: 0.75rem 1rem;
   background-color: var(--secondary-color);
   color: var(--lowlight-color);
   border: none;
   border-radius: 5px;
-  width: 100%; /* ensures equal sizing inside flex */
+  width: 100%;
   text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 #about-btn:hover, #play-tag-x-btn:hover {
   transform: scale(1.05);
-  transition: transform 0.3s ease;
   background-color: var(--primary-color);
   cursor: pointer;
   box-shadow: 0 2px 5px var(--highlight-color);
 }
 
-/* About button alignment */
+/* Button group alignment */
 .about-buttons {
   display: flex;
   gap: 1rem;
@@ -590,24 +566,27 @@ justify-content: center;
 
 /* Media Queries */
 @media (max-width: 768px) {
-  .about-content {
-    flex-direction: column;
-    text-align: center;
+  .about-header {
+    flex-direction: row;
+    justify-content: center;
   }
 
-  .about-logo,
-  .about-text {
-    flex: 1 1 100%;
+  .about-header img {
+    max-width: 220px;
+    max-height: 320px;
   }
 
   .about-logo img {
-    margin: 0 auto;
+    width: 180px;
   }
 
   .card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+  .about-text {
+    flex: 1 1 50%;
   }
 }
 
