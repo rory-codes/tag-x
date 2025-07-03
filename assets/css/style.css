@@ -127,6 +127,9 @@ button {
   color: var(--highlight-color);
 }
 
+#landing-logo {
+  margin: 2px;
+}
 .landing-info {
   max-width: 90%;
   padding: 1rem;
