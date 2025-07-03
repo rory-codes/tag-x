@@ -1,131 +1,210 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![Home](docs/readme_images/mockup.png)
 
-Welcome USER_NAME,
+# TAG X
+A website that promotes TAG X’s tag rugby business. The site designed to showcase services provided. The website provides a logical flow of information, making it easy for users to navigate through the site. The site contains 'call to action' buttons, giving users the chance to send an enquiry via the enquiry form and navigation to help users move around the site.
+TAG X is dedicated to providing a fun, non-contact way of playing rugby. This website serves as a digital platform to promote TAG X services and create an easy point of contact for clients. To view the live site, [click here](https://rory-codes.github.io/tag-x/)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Table of Content
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+1. [Project Goals](#project-goals)
+    1. [User Goals](#user-goals)
+    2. [Site Owner Goals](#site-owner-goals)
+2. [User Experience](#user-experience)
+    1. [User profiles](#user-profiles)
+    2. [User Requrements and Expectations](#user-requrements-and-expectations)
+    3. [User Stories](#user-stories)
+3. [Design](#design)
+    1. [Design Choices](#design-choices)
+    2. [Colour](#colours)
+    3. [Fonts](#fonts)
+    4. [Structure](#structure)
+    5. [Wireframes](#wireframes)
+4. [Technologies Used](#technologies-used)
+    1. [Languages](#languages)
+    2. [Frameworks & Tools](#frameworks-&-tools)
+5. [Features](#features)
+    1.[Overview](#overview)
+    2.[Detailed overview](#detailed-overview)
+    3.[Features left to implement](#left-to-implement)
+6. [Testing](#validation)
+    1. [HTML Validation](#HTML-validation)
+    2. [CSS Validation](#CSS-validation)
+    3. [Accessibility](#accessibility)
+    4. [Performance](#performance)
+    5. [Reactivity](#reactivity)
+    6. [Functionality testing](#functionality)
+7. [Bugs](#Bugs)
+8. [Deployment](#deployment)
+9. [Credits](#credits)
+10. [Acknowledgements](#acknowledgements)
+<br>
 
-## Gitpod Reminders
+## Project goals
+ To provide a website that showcases TAG X tag rugby and provides its customers with an easy to navigate site. The path follows a logical path through to the enquiry form which adapts depending on the type of booking. Please click [here](https://rory-codes.github.io/rt-coaching/) to see the deployed site.
+ 
+### User goals
+**For adult customers: ** 
+Provide information on TAG X and the services provided and give customers information on tag rugby and how it is played. Provide images so the user can see other people playing tag rugby. There should also be information on the venues and times provided, as well as the pricing. There will also be an enquiry form so members can enquire about upcoming sessions.
+### Site owner goals 
+**For TAG X:** 
+Build an online presence to attract new clients and give users somewhere to access information on TAG X. Also, open communication with users via the enquiry form.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## User Experience (UX)
 
-`python3 -m http.server`
+### User profiles:
+* Adults interested in playing tag rugby. 
+* Children interested in playing tag rugby.
+* Parents of children interested in playing tag rugby.
 
-A blue button should appear to click: _Make Public_,
+### User requirements and expectations
+* **Intuitive Navigation:** The site follows a clear menu structure for easy access to different parts of the site.
 
-Another blue button should appear to click: _Open Browser_.
+* **Responsive Design:** The site has been optimised for mobile and desktop usage, allowing users to access content on the go. This has been achieved using a 'mobile first approach' to ensure the content works on mobiles before addressing larger screen sizes.
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+* **Clear Call-to-Actions:** The website contains booking buttons so that users can easily access the enquiry  form. 
 
-A blue button should appear to click: _Make Public_,
+* **Fast Load Times:** Images and resources have been optimised to ensure smooth browsing on all devices, including mobile.
 
-Another blue button should appear to click: _Open Browser_.
+* **Accessibility:** The website follows WCAG 2.1 guidelines to ensure all users can access content easily and without obstacle.
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+**Further considerations**
+1. **Strategy:** Set user needs and goals to ensure the site serves TAG X and its customers/clients.
+2. **Scope:** Contain features such as the about, carousel, rules, history, card and enquiry sections.
+3. **Structure:** Design a logical easy-to-use structure that produces easy navigation and ease of access for its users.
+4. **Skeleton:** Create wireframes to map out the layout the site and give TAG X an idea of what to expect when complete.
+5. **Surface:** Develop cohesive bespoke website with responsive design using TAG X colours and branding.
 
-To log into the Heroku toolbelt CLI:
+### User stories:
+User stories were used to align content with the target audience of the client website. This was broken down into three categories: Must haves, Should haves and Could haves. This helped establish task prioritisation and guide the development of the site.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+#### Must haves
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+##### User story 1:
+As a first-time visitor who’s not familiar with Tag-X, I want a visually clear and engaging landing page so that I can instantly understand what the site is about and be encouraged to explore further.
 
-### Connecting your Mongo database
+##### User story 2:
+As a young person interested in trying a new sport, I want to use the carousel to see images of what Tag-X sessions look like so that I can quickly get a feel for the sport.
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
+##### User story 3:
+As a parent looking for sessions for my child, I want to use interactive cards to view venues, times and prices so that I can easily compare and choose a suitable option.
+##### User story 4:
+As a parent looking for sessions for my child, I want to use interactive cards to view venues, times and prices so that I can easily compare and choose a suitable option.
 
-------
+#### Should haves
 
-## Release History
+##### User story 5:
+As a 12-year-old curious about joining, I want to read a simple description of what Tag Rugby is and brief history of how it was established so that I can understand what’s involved before signing up.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+##### User story 6:
+As a new user, I want the rules of Tag Rugby to be easy to find and understand so that I can quickly learn how the game works.
 
-**June 18, 2024,** Add Mongo back into template
+#### Could haves
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
+#### User story 7:
+As a user with eyesight problems, I would like to be able to toggle between light and dark modes when using the site so that I can view the content effectively.
 
-**May 28 2024:** Fix Mongo and Links installs
+## Design
 
-**April 26 2024:** Update node version to 16
+### Design choices
+* **Branding:** A consistent color palette and typography has been used throughout the site. It is the same font and colour palette used in the logo for TAG X representing alignment with TAG X’s identity and brand.
 
-**September 20 2023:** Update Python version to 3.9.17.
+* **Engaging Visuals:** There is sufficient use of images throughout the site to build user interest.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+* **Readable Layout:** The website has been produced to have a clean design with easily readable sections to minimise information overload.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+* **Minimalist Design:** There is a clear focus on important information with minimal distractions.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+***Landing page** The landing page provides an interesting first impression, hopefully enticing the user to find out more about TAG X.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+***Interactive site ** The site contains interactive components such as the user can toggle between the visibility of paragraphs in history and rules section.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+***Interactive cards** The site has cards which present information to the user depending on which button they click.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+***Adaptive enquiry form** The enquiry form will adapt depending on the button pressed to access the enquiry form. Parents name field will not appear on the adult enquiry form and the drop down list will change depending on adult of junior enquiry form.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### Colour
+The colour scheme was selected in coordination with the TAG X brand logo. The colouring creates a bespoke feel to the website and creates a warm, professional appearance for users. 
+![Color scheme](docs/readme_images/colors.png)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Fonts
+The fonts were selected using google fonts. 
+Encode Sans Semi Expanded was selected for all headings due to looking professional and aligning with the TAG X logo. Jetbrains mono was also selected to align with the TAG X logo.
+### Structure
+The page is structured in a succinct, recognisable, user friendly, and easy to learn format. Upon arriving to the website, the user sees a familiar type of navigation bar with the TAG X logo on the left side and the navigation links to the right. 
+The website consists of one page with various sections: 
+- Landing page 
+- About section
+- Carousel
+- Rules section
+-History section
+-Card section.
+-Enquiry section.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Wireframes
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+#### Landing page
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+![Home](docs/wireframes/tag-x-mobile-landing-page.png) 
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+![Home](docs/wireframes/tag-x-tablet-landing page.png)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+![Home](docs/wireframes/tag-x-desktop-landing-page.png)
+ <br>
+#### Main site content
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+![Main](docs/wireframes/tag-x-mobile.png) 
 
-------
+![Main](docs/wireframes/tag-x-tablet.png) 
 
-## FAQ about the uptime script
+![Main](docs/wireframes/tag-x-desktop.png) 
 
-**Why have you added this script?**
+<br>
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+#### Enquiry form
 
-**How will this affect me?**
+![Enquiry form](docs/wireframes/tag-x-mobile-enquiry-form.png) 
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+![Enquiry form](docs/wireframes/tag-x-tablet-enquiry-form.png) 
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+![Enquiry form](docs/wireframes/tag-x-desktop-enquiry-form.png) 
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+<br>
 
-**So….?**
+## Technologies 
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+1. Languages
+* HTML5 To build structure and develop the Website.
+* CSS3 to customise and style site with CSS in an external file.
+*JavaScript to create interactive front-end development. This is also in an external file.
 
-**Can I opt out?**
+2. Frameworks
+**Frontend Framework**
+*Bootstrap V5.3 was used for certain elements.
+**IDE**
+* Visual Studio Code: The website was created and developed using VS Code.
+**Host**
+* GitHub: Source of the code is hosted on GitHub and deployed using Git Pages.
+**External Design**
+* Font Awesome: Icons obtained from https://fontawesome.com/
+* Favicon.io: Favicon files were customised created at https://favicon.io/favicon-converter/
+**Images**
+* Squoosh: https://squoosh.com/ was used to reduce the size of the images used throughout the website.
+* Balsamiq: Website wireframes were created using balsamiq https://balsamiq.com/wireframes/desktop
+***Booking Integration:** Booking enquiry form to allow users to message TAG X about upcoming sessions.
+***Deployment:** Hosted via GitHub Pages (https://github.com/rory-codes/tag-x/
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+## Features
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+### Overview
+* Responsive design and content.
+* Hidden internal section (landing page).
+* External frameworks used.
+* Bootstrap grid system used to align content.
+* Imported google fonts, favicon, TAG X logo, font-awesome logo, and map.
+* Bootstrap used to add features such as accordion or cards and then customised using CSS or bootstrap classes.
+* Booking inquiry form.
+* Carousel with images of people playing tag rugby.
+* Easy to navigate site design, making it user friendly and accessible.
+*Adaptive form.
+*Interactive content to provide user feedback.
+*Form validation using JavaScript.
