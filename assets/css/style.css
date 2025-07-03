@@ -61,7 +61,7 @@ button {
   border: 2px solid var(--secondary-color);
   border-radius: 12px;
   font-family: var(--font-family);
-  box-shadow: var(--highlight-color);
+  box-shadow:1px 2px 4px var(--highlight-color);
 }
 
 /* JS Global styles */
@@ -133,13 +133,14 @@ button {
 }
 
 #enter-btn {
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding: 0.5rem 1rem;
   background-color: var(--secondary-color);
   color: var(--lowlight-color);
   border: none;
   border-radius: 5px;
   box-shadow: 0 0.5px 0.5px var(--primary-color);
+  margin-bottom: 2rem;
 }
 
 #enter-btn:hover {
@@ -147,7 +148,7 @@ button {
   transition: transform 0.3s ease;
   background-color: var(--primary-color);
   cursor: pointer;
-  box-shadow: 1 2px 4px var(--highlight-color);
+  box-shadow: 1px 2px 4px var(--highlight-color);
 }
 
 /* About Section Styles  */
@@ -310,7 +311,7 @@ button {
   transition: transform 0.3s ease;
   background-color: var(--primary-color);
   cursor: pointer;
-  box-shadow: 1 1px 1px var(--highlight-color);
+  box-shadow: 1px 1px 1px var(--highlight-color);
 }
 
 /* Enquiry section styles */
@@ -345,7 +346,7 @@ button {
   transition: transform 0.3s ease;
   background-color: var(--primary-color);
   cursor: pointer;
-  box-shadow: 1 2px 4px var(--highlight-color);
+  box-shadow: 1px 2px 4px var(--highlight-color);
 }
 
 #enquiry-logo {
@@ -417,7 +418,7 @@ button:focus,
   transition: transform 0.3s ease;
   background-color: var(--primary-color);
   cursor: pointer;
-  box-shadow: 1 2px 4px var(--highlight-color);
+  box-shadow: 1px 2px 4px var(--highlight-color);
 }
 
 #card-booking-btn-jnr {
@@ -434,7 +435,7 @@ button:focus,
   transition: transform 0.3s ease;
   background-color: var(--primary-color);
   cursor: pointer;
-  box-shadow: 1 2px 4px var(--highlight-color);
+  box-shadow: 1px 2px 4px var(--highlight-color);
 }
 
 .card-btn {
@@ -559,13 +560,13 @@ justify-content: center;
   transition: transform 0.3s ease;
   background-color: var(--primary-color);
   cursor: pointer;
-  box-shadow: 1 2px 4px var(--highlight-color);
+  box-shadow: 1px 2px 4px var(--highlight-color);
 }
 
 /* Media Queries */
 @media (max-width: 600px) {
   #enquiry-logo {
-    max-width: 140px; /* reduce size on mobile */
+    max-width: 200px; /* reduce size on mobile */
     padding: 0.5rem;
   }
 }
