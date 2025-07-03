@@ -474,3 +474,74 @@ Expected:
  
  Actual:
 All links performed as expected.
+
+## Bugs
+Several issues/bugs were present during the web development process. Below is a list of issues which are broken down into problem and fix, highlighting how code was changed to resolve issues.
+
+### Issue #1: Form submission
+- **Problem**: Cards are not aligned.
+- **Fix**: Added a margin to the text within the card.
+
+### Issue #2: Navbar not accessible on mobile devices.
+- **Problem**: Navbar items going black as the user hovers over them, creating a bad UX.
+- **Fix**: There was a conflicting bootstrap class, which was removed, identified using devtools.
+
+### Issue #3: Large Images with png file type Affecting Loading Time: 
+-**Problem**: Image files containing too much data were taking longer to load the webpage and driving down performance.
+-**Fix**: I used squoosh to compress certain image files from "png" to "webp.". Dramatically improving performance. Applied ‘loading=”lazy” to certain images to optimise performance as well.
+
+### Issue #4: Logo alignment on landing page and enquiry form.
+- **Problem**: On smaller screens alignment is out.
+- **Fix**: Used CSS to address this and added flex classes to ensure the site works on all devices.
+
+### Issue #5: Alignment issues with about section on tablet
+- **Problem**: The images and logo come out of line and it looks messy and unappealing on tablet.
+- **Fix**: 2 media queries were introduced on screen about 820px to address this issue.
+ 
+### Issue #6: Form asking for venue/time even when it was in there.
+- **Problem**: Form asking for venue/time even when it was in there and never submitting.
+- **Fix**: Had to adjust the javaScript to not require fields that are hidden, due to the confusion of having some fields showing for adults and some fields showing for juniors.
+  
+### Issue #7: ‘play TAG X’ button on navbar.
+- **Problem**: When ‘play TAG X’ button on navbar is clicked the form is unhidden and the form is not adapting as expected. This is due to the cards and enquiry form being wrapped in a section called ‘get-involved’. It will require the javaScript being adjusted throughout the site.
+- **Fix**: Yet to fix. May have to wait for a future update.
+
+## Deployment
+### Deployment to Github Pages
+The portfolio website deployed using GitHub Pages
+
+**Steps to Deploy site:**
+* Sync files to a GitHub repository from VS-Code.
+* Go to the Settings tab in the repository.
+* Scroll down to the Pages section.
+* Under Branch, select main
+* Click Save. Live link can be found ![here] (https://rory-codes.github.io/tag-x/)
+
+## Credits
+* Bootstrap - This website's code was utilised to construct the navbar and cards' structural foundation according to my pertinent preferences and guarantee that the site's styling is consistent throughout. Additionally, bootstrap was helpful in giving JavaScript code for a responsive and functional structure, such as the navbar that collapses when a mobile view button is clicked.
+* JavaScript - JavaScript should also be commended because it was utilized to adjust to Bootstrap 5.3
+* Git - Git pages were used for project planning, hosting repositories.
+* VS-code - Virtual studio code (VS-code) was used for all coding.
+* Squoosh - Squoosh was used to compress files, changing them from PNG to WebP, which shortened the time the website took to load.
+* Code Institute - Resources from the Code Institute, such as my tutor Mo Shami, who gave advice on how approach the project.
+ The codes utilised in this project were first learned via walkthrough projects such as love-running and boardwalk-games.
+ Code institute also helped me learn about important principles such as: javaScript and JQuery, jest and some Python. Adding to previous learning
+*Wendy Purdy - Wendy has been helpful with her commitment and help towards my development. We have weekly meetings and/or 1-1's and she has been a great line of support. Please see below for an example of how she helped me repair my form (which wasn't submitted as intended)
+* W3schools - Used to refer to previously learned principles, such as pseudo-classes and form elements. This was helpful when building the site.
+* Slack - To discuss code, resolve hosting and connectivity problems, and get input on written code, Slack was utilized.
+* Stackoverflow - This was used various times throughout the process to quickly look up something and make mental connections. Please see below for example:
+* Google - Google maps are utilized to embed a location and an interactive element in the footer, and Google fonts are used for styling across the website: https://fonts.google.com/.
+ The 'preload' and 'preconnect' scripts used on this website were read, found, and learned by Chrome developers: https://developer.chrome.com/docs/devtools/application/debugging-speculation-rules
+ Chrome DevTools is a lighthouse tool for testing and examining the accessibility and performance of code.
+* Favicon.io - This was used to create favicons.
+* Google fonts - Used to import fonts.
+* Canva.com - Used to create Logo for RT Coaching.
+* Font awesome - Used to import icons.
+* Balsamic - Used to create wireframes.
+* colormind.io - Used to create palette for RT coaching and subsequently used throughout site.
+
+### Media 
+*  Used to create AI generated images (Copyright free).
+
+## Acknowledgements
+Thank you! This is my second project via the code institute - Full stack web development (level 5) diploma. Thanks to my mentor, code institute and Wendy Purdy for supporting me during this milestone project.
