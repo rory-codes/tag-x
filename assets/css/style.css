@@ -122,7 +122,6 @@ button {
 
   /* border ets */
   padding: 2rem;
-  border: 2px solid var(--secondary-color);
   border-radius: 12px;
   color: var(--highlight-color);
 }
