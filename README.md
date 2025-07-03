@@ -350,7 +350,7 @@ This was tested manually on the following devices:
 | gallery            | index.html#carousel    |
 | TAG X Rulebook     | index.html#rules       |
 | The history of tag | index.html#history     |
-| play TAG X         | success.html           |
+| play TAG X         | index.html#get-involved|
 
  All of the page links led to the appropriate sections and pages as planned.
 
