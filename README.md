@@ -114,13 +114,7 @@ As a user with eyesight problems, I would like to be able to toggle between ligh
 
 * **Minimalist Design:** There is a clear focus on important information with minimal distractions.
 
-***Landing page** The landing page provides an interesting first impression, hopefully enticing the user to find out more about TAG X.
-
-***Interactive site ** The site contains interactive components such as the user can toggle between the visibility of paragraphs in history and rules section.
-
-***Interactive cards** The site has cards which present information to the user depending on which button they click.
-
-***Adaptive enquiry form** The enquiry form will adapt depending on the button pressed to access the enquiry form. Parents name field will not appear on the adult enquiry form and the drop down list will change depending on adult of junior enquiry form.
+* **Landing page** The landing page provides an interesting first impression, hopefully enticing the user to find out more about TAG X.
 
 ### Colour
 The colour scheme was selected in coordination with the TAG X brand logo. The colouring creates a bespoke feel to the website and creates a warm, professional appearance for users. 
@@ -146,7 +140,7 @@ The website consists of one page with various sections:
 
 ![Home](docs/wireframes/tag-x-mobile-landing-page.png) 
 
-![Home](docs/wireframes/tag-x-tablet-landing page.png)
+![Home](docs/wireframes/tag-x-tablet-landing-page.png)
 
 ![Home](docs/wireframes/tag-x-desktop-landing-page.png)
  <br>
@@ -190,7 +184,6 @@ The website consists of one page with various sections:
 **Images**
 * Squoosh: https://squoosh.com/ was used to reduce the size of the images used throughout the website.
 * Balsamiq: Website wireframes were created using balsamiq https://balsamiq.com/wireframes/desktop
-***Booking Integration:** Booking enquiry form to allow users to message TAG X about upcoming sessions.
 ***Deployment:** Hosted via GitHub Pages (https://github.com/rory-codes/tag-x/
 
 ## Features
@@ -201,10 +194,283 @@ The website consists of one page with various sections:
 * External frameworks used.
 * Bootstrap grid system used to align content.
 * Imported google fonts, favicon, TAG X logo, font-awesome logo, and map.
-* Bootstrap used to add features such as accordion or cards and then customised using CSS or bootstrap classes.
 * Booking inquiry form.
 * Carousel with images of people playing tag rugby.
 * Easy to navigate site design, making it user friendly and accessible.
 *Adaptive form.
 *Interactive content to provide user feedback.
 *Form validation using JavaScript.
+*The site contains interactive components such as the user can toggle between the visibility of paragraphs in history and rules section.
+*The site has cards which present information to the user depending on which button they click.
+*The enquiry form will adapt depending on the button pressed to access the enquiry form. Parents name field will not appear on the adult enquiry form and the drop down list will change depending on adult of junior enquiry form.
+
+### Detailed overview of features 
+  #### Site wide 
+**Favicon**
+* The site incorporates a custom favicon so that users can identify the site tab on their browser.
+* This uses the same font and colours as the logo and website to start building brand familiarity.
+
+#### Landing Page 
+![Home](docs/readme_images/landing-page.png)
+*  Large Logo: Prominent display of the **TAG X** branding, helping reinforce identity.
+*  Slogan / Subtitle: "Play smart, play fast, play TAG X" positioned under the logo to immediately convey the company slogan.
+* Enter Button: “Enter” button added to direct users to the main content and subsequently hide the landing page.
+
+#### About section
+![Home](docs/readme_images/about1.png)
+![Home](docs/readme_images/about2.png)
+*  Image - Logo - Image layout: A central logo flanked by two tag rugby images to create visual balance on larger screens. This should be one on top of each other on mobiles.
+*  Introductory Text: A friendly explanation of what Tag X offers — emphasising non-contact fun, inclusivity, and player safety.
+*  Dual Paragraph Layout: One for a general description and another for how the sport works (e.g., 6- and 7-a-side, no tackling).
+* User navigation: User can navigate directly to “Play TAG X “or “Find out more about TAG X”. depending on the selection, the user will be directed through the site differently due to some sections being “hidden” initially.
+
+#### Carousel 
+![Home](docs/readme_images/carousel.png)
+* Rotating or swipeable images of real sessions (tag rugby in action).
+* Emphasizes fun, safety, and teamwork visually.
+* Webp format used for images to improve performance. Lady loading also used to help with performance.
+*Autoscroll so the user is shown all of the images without having to press anything.
+* HTML, CSS and javascript used for structure, styling and interactivity.
+
+
+### Rules section
+![Home](docs/readme_images/rules.png)
+*Tag rugby description section tells users what tag rugby is, how it differs from contact rugby and why it’s suitable for all ages/abilities.
+*Headings that are clickable and allow the user to toggle the visibility of the correlating paragraph when clicked.
+*Paragraph text colour changes when the user hovers over the text. 
+* Covers gameplay rules, team sizes, scoring, penalties. Giving users information on the sport of tag rugby.
+
+#### History section
+![Home](docs/readme_images/history.png)
+* Headings that are clickable and allow the user to toggle the visibility of the correlating paragraph when clicked.
+* Paragraph text colour changes when the user hovers over the text. 
+* Button that takes users to the card section, taking users through the site towards the enquiry form.
+* HTML, CSS and JavaScript used for structure, styling and interactivity.
+
+#### Card section
+![Home](docs/readme_images/cards.png)
+* Two cards introduced. One for adults and one for juniors.
+* HTML, CSS and JavaScript used for structure, styling and interactivity.
+* Images used with filters applied to add visual styling to the card.
+* Both cards have a venue and times button which allows users to see information on times and venue of sessions. Information is displayed at the bottom of the card when the button is clicked. This is achieved using JavaScript.
+*Both cards also have a pricing button which allows users to see information on the pricing for TAG X lessons. This information is also displayed at the bottom of the card when the button is clicked.
+*There is also a ‘Book TAG X’ button which transports users to the enquiry form and adapts the content depending on whether the junior or adult ‘book TAG X’ button was clicked.
+
+#### Enquiry form
+![Home](docs/readme_images/enquiry1.png)
+![Home](docs/readme_images/enquiry2.png)
+* The enquiry form contains a heading, paragraph and a form.
+* The enquiry form contains a logo.
+* The form contains the following entries (Entries with a * are required): First name*, Last name*, parent name, email*, phone number*, message, type of service (drop down menu)*, and a submit button.
+* CSS styling used to align with previous content and brand identity. 
+* JavaScript was used for form validation to ensure that user input is sufficient and accurate.
+* Depending on the button used to access the form, the form will adapt. Parent name will only appear for junior bookings and the drop-down menu will change depending on whether it is an adult or junior booking.
+
+#### Features Left to Implement
+* User story: As a potential new customer with eyesight problems, I would like to be able to toggle between light and dark modes when using the site so that I can view the content effectively.
+
+## Testing
+
+### HTML validation
+The website's HTML was checked using the W3C Markup Validation Service. Every page loads without any issues or warnings.
+
+**HTML validation - Pre fixes**
+#### Main
+![Home](docs/readme_images/pre-fix-html.png)
+
+**HTML validation - Post fixes**
+#### Main
+![Home](docs/readme_images/post-fix-html.png)
+
+### CSS validation
+To validate the website's CSS, the W3C Jigsaw CSS Validation Service was utilized. 
+When the entire page is validated, the validator displays a few issues related to Bootstrap v5.0. My own custom CSS passes validation with no mistakes identified, although there are some cautions about using root variables.
+
+**Prefix CSS validation:**
+The following errors were found.
+![Home](docs/readme_images/pre-fix-css.png)
+
+**Post fix CSS validation:**
+No errors were found.
+![Home](docs/readme_images/post-fix-css.png)
+
+### Accessibility 
+To make sure the website complied with strict accessibility guidelines, the WAVE WebAIM web accessibility assessment tool was utilized. Every page passes with no mistakes.
+**Prefix**
+![Home](docs/readme_images/pre-wave.png)
+
+**Postfix**
+  ![Home](docs/readme_images/post-wave.png)
+ 
+### Performance
+** Lighthouse Testing Before Fixes**
+
+#### Main (index.html)
+![Main](docs/readme_images/pre-lighthouse.png)
+
+**Lighthouse Testing After Fixes**
+
+#### Main (index.html)
+![Main](docs/readme_images/post-lighthouse.png)
+
+**Testing protocol:**
+1. Go to [Portfolio](https://rory-codes.github.io/tag-x/index.html) in an open browser.
+2. Right-click and select "Inspect" to open the developer tools.
+3. Reduce to 320px and set to responsive.
+5. To adjust the responsive window's minimum and maximum width, click and drag it back and forth.
+
+**Anticipated:**
+No graphics are stretched, and the website works well on all screen widths.
+There isn't a horizontal scroll.
+Nothing overlaps.
+
+**Actual:**
+The website behaved as expected apart from the following issues:
+* The logo in the landing page is too big on mobile
+* Enquiry form logo also not working correctly on all devices.
+* About section images and logo are not aligned correctly on tablet.
+
+This was tested manually on the following devices:
+* Iphone 12
+* Iphone XR
+* Samsung galaxy S24.
+* LG Thinkpad laptop.
+* Ipad pro.
+* Devtools various phones: Iphone SE, Iphone XR, Iphone 12 pro, Iphone 14 pro max, pixel 7, Samsung galaxy s8+, Samsung galaxy S20 ultra, Iphone 5/SE.
+
+### Functionality testing
+
+ **Navigation**
+ To ensure that all navigation links lead to the appropriate pages and sections, testing was done.  To accomplish this, each page's navigation links were clicked.
+
+| Page to Load | Link |
+| -----------------  | ---------------------- |
+| Home               | index.html             |
+| About TAG X        | index.html#tag-x-intro |
+| gallery            | index.html#carousel    |
+| TAG X Rulebook     | index.html#rules       |
+| The history of tag | index.html#history     |
+| play TAG X         | success.html           |
+
+ All of the page links led to the appropriate sections and pages as planned.
+
+ **Form Testing**
+The form on the home page was tested to ensure it functioned as intended when the correct data type was input and required fields were entered/selected.
+
+**Scenario One - Correct Inputs**
+Steps to test:
+Navigate to the about section.
+Click on ‘Play TAG X’ link in the about section.
+Click on card one
+User will be redirected to the adult enquiry page and then input the following:
+First Name: Rory
+Last Name: McThompson
+Email: email@test.com
+Phone number: 07486728393
+Selection any selection in session drop-down.
+Message: This is a test.
+Click Submit
+User should get a notification that the form was submitted successfully and scroll up function brings user to the about section.
+
+Expected:
+Form submitted without any errors, and the user receives a message and is scrolled to the about section.
+
+Actual:
+There were no errors present, and the user receives a message and is scrolled to the about section.
+
+Navigate to the about section.
+Click on ‘Play TAG X’ link in the about section.
+Click on card two
+User will be redirected to the junior enquiry page and then input the following:
+Full Name: Rory McThompson
+Parents name: Jane McThompson
+Contact number: 07486728393
+Email address: email@test.com
+Selection any selection in session drop-down.
+Message: This is a test.
+Click Submit
+User should get a notification that the form was submitted successfully and scroll up function brings user to the about section.
+Expected:
+Form submitted without any errors, and the user receives a message and is scrolled to the about section.
+
+Actual:
+There were no errors present, and the user receives a message and is scrolled to the about section.
+
+**Scenario two - required field not entered**
+Steps to test:
+
+Navigate to the about section.
+Click on ‘Play TAG X’ link in the about section.
+Click on card two
+User will be redirected to the junior enquiry page and then input the following:
+Full Name: Rory McThompson
+Parents name: Jane McThompson
+Contact number: 07486728393
+Email address: email@test.com
+Selection any selection in session drop-down.
+Message: This is a test.
+Click Submit
+User should be prompted to enter a first name. 
+Next- repeat step for all required fields: First name, Last name, Email address, Phone number, selection on both drop down menus.
+
+Expected:
+
+User is prompted to enter the missing required field
+
+Actual:
+
+The user is prompted to enter the missing required field and this is the same for all required fields.
+
+**Scenario three - Email address incorrect format**
+Steps to test:
+
+Navigate to the about section.
+Click on ‘Play TAG X’ link in the about section.
+Click on card two
+User will be redirected to the junior enquiry page and then input the following:
+Full Name: Rory McThompson
+Parents name: Jane McThompson
+Contact number: 07486728393
+Email address: email@test.com
+Selection any selection in session drop-down.
+Message: This is a test.
+Click Submit
+
+Expected:
+
+User should be prompted to enter an email address with the correct format. 
+
+Actual:
+
+The user is prompted to enter an email address with the correct format. Once that is complete, form submits as expected.
+
+**Landing button**
+Expected:
+* The landing page should be hidden (fade away) and the main content is displayed (fade in).
+Actual
+* The landing page should be hidden (fade away) and the main content is displayed (fade in).
+
+**About buttons**
+Expected: 
+* User clicks ‘learn more about the world of tag’ button and the carousel, rules and history section are unhidden, and the user is scrolled down to the carousel.
+* User clicks the ‘Play TAG X’ button and this unhides the cards and scrolls the user down to the card.
+Actual:
+* Both buttons behaved as expected.
+
+**History button**
+Expected:
+* Scrolls the user down to the cards.
+Actual:
+* Behaved as expected.
+
+**Card buttons**
+Expected:
+* Click adult venue/time button and expect to see the adult venue and times.
+* Click the adult pricing button and expect to see the adult pricing
+* Click the adult book now button and the user should be taken to the enquiry form, containing the correct form items.
+* Click junior venue/time button and expect to see the junior venue and times.
+* Click the junior pricing button and expect to see the junior pricing
+* Click the junior book now button and the user should be taken to the enquiry form, containing the correct form items.
+ 
+ Actual:
+All links performed as expected.
