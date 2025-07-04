@@ -1,7 +1,7 @@
 ![Home](docs/readme_images/mockup.png)
 
 # TAG X
-A website that promotes TAG X’s tag rugby business. The site designed to showcase services provided. The website provides a logical flow of information, making it easy for users to navigate through the site. The site contains 'call to action' buttons, giving users the chance to send an enquiry via the enquiry form and navigation to help users move around the site.
+A website that promotes TAG X’s tag rugby business. The site designed to showcase services provided. The website provides a logical flow of information, making it easy for users to navigate through the site. The site contains 'call to action' buttons, giving users the chance to send an enquiry via the enquiry form and navigation to allow users to navigate the site.
 TAG X is dedicated to providing a fun, non-contact way of playing rugby. This website serves as a digital platform to promote TAG X services and create an easy point of contact for clients. To view the live site, [click here](https://rory-codes.github.io/tag-x/)
 
 ## Table of Content
@@ -87,6 +87,7 @@ As a young person interested in trying a new sport, I want to use the carousel t
 
 ##### User story 3:
 As a parent looking for sessions for my child, I want to use interactive cards to view venues, times and prices so that I can easily compare and choose a suitable option.
+
 ##### User story 4:
 As a parent looking for sessions for my child, I want to use interactive cards to view venues, times and prices so that I can easily compare and choose a suitable option.
 
@@ -123,16 +124,18 @@ The colour scheme was selected in coordination with the TAG X brand logo. The co
 ### Fonts
 The fonts were selected using google fonts. 
 Encode Sans Semi Expanded was selected for all headings due to looking professional and aligning with the TAG X logo. Jetbrains mono was also selected to align with the TAG X logo.
+
 ### Structure
 The page is structured in a succinct, recognisable, user friendly, and easy to learn format. Upon arriving to the website, the user sees a familiar type of navigation bar with the TAG X logo on the left side and the navigation links to the right. 
+
 The website consists of one page with various sections: 
 - Landing page 
 - About section
 - Carousel
 - Rules section
--History section
--Card section.
--Enquiry section.
+- History section
+- Card section.
+- Enquiry section.
 
 ### Wireframes
 
@@ -343,16 +346,15 @@ This was tested manually on the following devices:
  **Navigation**
  To ensure that all navigation links lead to the appropriate pages and sections, testing was done.  To accomplish this, each page's navigation links were clicked.
 
-| Page to Load | Link |
-| -----------------  | ---------------------- |
-| Home               | index.html             |
-| About TAG X        | index.html#tag-x-intro |
-| gallery            | index.html#carousel    |
-| TAG X Rulebook     | index.html#rules       |
-| The history of tag | index.html#history     |
-| play TAG X         | index.html#get-involved|
+| Page to Load       |          Link          |  Outcome
+| -----------------  | ---------------------- | ----------------------------------------------------------    |
+| Home               | index.html             | Worked as expected                                            |
+| About TAG X        | index.html#tag-x-intro | Worked as expected                                            |
+| gallery            | index.html#carousel    | Worked as expected                                            |
+| TAG X Rulebook     | index.html#rules       | Worked as expected                                            |
+| The history of tag | index.html#history     | Worked as expected                                            |
+| play TAG X         | index.html#get-involved| Worked but needs amending to address the form entries visible |
 
- All of the page links led to the appropriate sections and pages as planned.
 
  **Form Testing**
 The form on the home page was tested to ensure it functioned as intended when the correct data type was input and required fields were entered/selected.
@@ -506,7 +508,12 @@ Several issues/bugs were present during the web development process. Below is a 
 - **Problem**: When ‘play TAG X’ button on navbar is clicked the form is unhidden and the form is not adapting as expected. This is due to the cards and enquiry form being wrapped in a section called ‘get-involved’. It will require the javaScript being adjusted throughout the site.
 - **Fix**: Yet to fix. May have to wait for a future update.
 
+### issue #8: Email entry on form not validating correctly. 
+- **Problem**: Form not working as expected. There was an issue with the email form entry, it was submitting without the @ sign.
+- **Fix**: There was an issue with the javaSrcipt used. The fix involved ammending the javaScript.
+
 ## Deployment
+
 ### Deployment to Github Pages
 The portfolio website deployed using GitHub Pages
 
