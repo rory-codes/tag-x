@@ -355,7 +355,7 @@ This was tested manually on the following devices:
 
 ### Automated testing
 The site initially used JEST as a form of automated testing. However, ran into issues and decided that the site would only use manual testing during its development.
-![JSLint](docs/readme_images/jest.png)
+![jest](docs/readme_images/jest.png)
 
 ### Functionality testing
 
