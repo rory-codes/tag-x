@@ -325,7 +325,7 @@ To make sure the website complied with strict accessibility guidelines, the WAVE
 ![Main](docs/readme_images/post-lighthouse.png)
 
 **Testing protocol:**
-1. Go to [Portfolio](https://rory-codes.github.io/tag-x/index.html) in an open browser.
+1. Go to [TAG X](https://rory-codes.github.io/tag-x/index.html) in an open browser.
 2. Right-click and select "Inspect" to open the developer tools.
 3. Reduce to 320px and set to responsive.
 5. To adjust the responsive window's minimum and maximum width, click and drag it back and forth.
