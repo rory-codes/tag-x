@@ -43,8 +43,14 @@ TAG X is dedicated to providing a fun, non-contact way of playing rugby. This we
  To provide a website that showcases TAG X tag rugby and provides its customers with an easy to navigate site. The path follows a logical path through to the enquiry form which adapts depending on the type of booking. Please click [here](https://rory-codes.github.io/rt-coaching/) to see the deployed site.
  
 ### User goals
-**For adult customers: ** 
+**For adult customers:** 
 Provide information on TAG X and the services provided and give customers information on tag rugby and how it is played. Provide images so the user can see other people playing tag rugby. There should also be information on the venues and times provided, as well as the pricing. There will also be an enquiry form so members can enquire about upcoming sessions.
+
+**Junior customers:**
+Provide information on tag x and how it can benefit junior customers. Provide information on what tag rugby is and how it is played.
+
+**Parents of junior customers:**
+Provide information on venue/times and pricing. 
 ### Site owner goals 
 **For TAG X:** 
 Build an online presence to attract new clients and give users somewhere to access information on TAG X. Also, open communication with users via the enquiry form.
@@ -347,13 +353,13 @@ This was tested manually on the following devices:
  To ensure that all navigation links lead to the appropriate pages and sections, testing was done.  To accomplish this, each page's navigation links were clicked.
 
 | Page to Load       |          Link          |  Outcome
-| -----------------  | ---------------------- | ----------------------------------------------------------    |
-| Home               | index.html             | Worked as expected                                            |
-| About TAG X        | index.html#tag-x-intro | Worked as expected                                            |
-| gallery            | index.html#carousel    | Worked as expected                                            |
-| TAG X Rulebook     | index.html#rules       | Worked as expected                                            |
-| The history of tag | index.html#history     | Worked as expected                                            |
-| play TAG X         | index.html#get-involved| Worked but needs amending to address the form entries visible |
+| ------------------ | ----------------------- | ------------------------------------------------------------- |
+| Home               | index.html              | Worked as expected                                            |
+| About TAG X        | index.html#tag-x-intro  | Worked as expected                                            |
+| Gallery            | index.html#carousel     | Worked as expected                                            |
+| TAG X Rulebook     | index.html#rules        | Worked as expected                                            |
+| The history of tag | index.html#history      | Worked as expected                                            |
+| Play TAG X         | index.html#tag-x-adults | Worked as expected                                            |
 
 
  **Form Testing**
@@ -374,10 +380,10 @@ Message: This is a test.
 Click Submit
 User should get a notification that the form was submitted successfully and scroll up function brings user to the about section.
 
-Expected:
+**Expected:**
 Form submitted without any errors, and the user receives a message and is scrolled to the about section.
 
-Actual:
+**Actual:**
 There were no errors present, and the user receives a message and is scrolled to the about section.
 
 Navigate to the about section.
@@ -392,10 +398,11 @@ Selection any selection in session drop-down.
 Message: This is a test.
 Click Submit
 User should get a notification that the form was submitted successfully and scroll up function brings user to the about section.
-Expected:
+
+**Expected:**
 Form submitted without any errors, and the user receives a message and is scrolled to the about section.
 
-Actual:
+**Actual:**
 There were no errors present, and the user receives a message and is scrolled to the about section.
 
 **Scenario two - required field not entered**
@@ -415,11 +422,11 @@ Click Submit
 User should be prompted to enter a first name. 
 Next- repeat step for all required fields: First name, Last name, Email address, Phone number, selection on both drop down menus.
 
-Expected:
+**Expected:**
 
 User is prompted to enter the missing required field
 
-Actual:
+**Actual:**
 
 The user is prompted to enter the missing required field and this is the same for all required fields.
 
@@ -433,40 +440,43 @@ User will be redirected to the junior enquiry page and then input the following:
 Full Name: Rory McThompson
 Parents name: Jane McThompson
 Contact number: 07486728393
-Email address: email@test.com
+Email address: emailtest.com
 Selection any selection in session drop-down.
 Message: This is a test.
 Click Submit
+Repeat with a different entry missing.
 
-Expected:
+**Expected:**
+User should be prompted to enter an email address with the correct format. For other entries, the same applies with the user being prompted to enter a valid entry.
 
-User should be prompted to enter an email address with the correct format. 
+**Actual:**
 
-Actual:
-
-The user is prompted to enter an email address with the correct format. Once that is complete, form submits as expected.
+The user is prompted to enter an email address with the correct format/alternative entry with the correct format. Once that is complete, form submits as expected.
 
 **Landing button**
-Expected:
+**Expected:**
 * The landing page should be hidden (fade away) and the main content is displayed (fade in).
-Actual
+
+**Actual**
 * The landing page should be hidden (fade away) and the main content is displayed (fade in).
 
 **About buttons**
-Expected: 
+**Expected:** 
 * User clicks ‘learn more about the world of tag’ button and the carousel, rules and history section are unhidden, and the user is scrolled down to the carousel.
 * User clicks the ‘Play TAG X’ button and this unhides the cards and scrolls the user down to the card.
-Actual:
+
+**Actual:**
 * Both buttons behaved as expected.
 
 **History button**
-Expected:
+**Expected:**
 * Scrolls the user down to the cards.
-Actual:
+
+**Actual:**
 * Behaved as expected.
 
 **Card buttons**
-Expected:
+**Expected:**
 * Click adult venue/time button and expect to see the adult venue and times.
 * Click the adult pricing button and expect to see the adult pricing
 * Click the adult book now button and the user should be taken to the enquiry form, containing the correct form items.
@@ -474,7 +484,7 @@ Expected:
 * Click the junior pricing button and expect to see the junior pricing
 * Click the junior book now button and the user should be taken to the enquiry form, containing the correct form items.
  
- Actual:
+**Actual:**
 All links performed as expected.
 
 ## Bugs
@@ -506,7 +516,7 @@ Several issues/bugs were present during the web development process. Below is a 
   
 ### Issue #7: ‘play TAG X’ button on navbar.
 - **Problem**: When ‘play TAG X’ button on navbar is clicked the form is unhidden and the form is not adapting as expected. This is due to the cards and enquiry form being wrapped in a section called ‘get-involved’. It will require the javaScript being adjusted throughout the site.
-- **Fix**: Yet to fix. May have to wait for a future update.
+- **Fix**: Changed the ID to naviagte to #tag-x-adults instead of #get-involved, which was a wrapper for the other two sections.
 
 ### issue #8: Email entry on form not validating correctly. 
 - **Problem**: Form not working as expected. There was an issue with the email form entry, it was submitting without the @ sign.
@@ -525,27 +535,25 @@ The portfolio website deployed using GitHub Pages
 * Click Save. Live link can be found ![here] (https://rory-codes.github.io/tag-x/)
 
 ## Credits
-* Bootstrap - This website's code was utilised to construct the navbar and cards' structural foundation according to my pertinent preferences and guarantee that the site's styling is consistent throughout. Additionally, bootstrap was helpful in giving JavaScript code for a responsive and functional structure, such as the navbar that collapses when a mobile view button is clicked.
-* JavaScript - JavaScript should also be commended because it was utilized to adjust to Bootstrap 5.3
+* Bootstrap - This website's code was utilised to construct the navbar and cards' structural foundation according to my pertinent preferences and guarantee that the site's styling is consistent throughout. Additionally, bootstrap was helpful with alignment issues. 
+* JavaScript - JavaScript should also be commended because it was utilized to create most of the functional behaviour of the site.
+* Jquery - Jquery libraries were pivotal in the building of the site.
 * Git - Git pages were used for project planning, hosting repositories.
 * VS-code - Virtual studio code (VS-code) was used for all coding.
 * Squoosh - Squoosh was used to compress files, changing them from PNG to WebP, which shortened the time the website took to load.
 * Code Institute - Resources from the Code Institute, such as my tutor Mo Shami, who gave advice on how approach the project.
- The codes utilised in this project were first learned via walkthrough projects such as love-running and boardwalk-games.
  Code institute also helped me learn about important principles such as: javaScript and JQuery, jest and some Python. Adding to previous learning
-*Wendy Purdy - Wendy has been helpful with her commitment and help towards my development. We have weekly meetings and/or 1-1's and she has been a great line of support. Please see below for an example of how she helped me repair my form (which wasn't submitted as intended)
-* W3schools - Used to refer to previously learned principles, such as pseudo-classes and form elements. This was helpful when building the site.
-* Slack - To discuss code, resolve hosting and connectivity problems, and get input on written code, Slack was utilized.
-* Stackoverflow - This was used various times throughout the process to quickly look up something and make mental connections. Please see below for example:
-* Google - Google maps are utilized to embed a location and an interactive element in the footer, and Google fonts are used for styling across the website: https://fonts.google.com/.
- The 'preload' and 'preconnect' scripts used on this website were read, found, and learned by Chrome developers: https://developer.chrome.com/docs/devtools/application/debugging-speculation-rules
- Chrome DevTools is a lighthouse tool for testing and examining the accessibility and performance of code.
+*Wendy Purdy - Wendy has been helpful with her commitment and help towards my development.
+* W3schools - Used to refer to previously learned principles, such as javaScript and Jquery. This was helpful when building the site.
+* Slack - To discuss code, resolve hosting and connectivity problems, and get input on written code.
+* Stackoverflow - This was used various times throughout the process to quickly look up something and make mental connections. 
+* Chome developer tools - The 'preload' and 'preconnect' scripts used on this website were read, found, and learned by Chrome developers. Chrome DevTools is a lighthouse tool for testing and examining the accessibility and performance of code.
 * Favicon.io - This was used to create favicons.
 * Google fonts - Used to import fonts.
 * Canva.com - Used to create Logo for RT Coaching.
 * Font awesome - Used to import icons.
 * Balsamic - Used to create wireframes.
-* colormind.io - Used to create palette for RT coaching and subsequently used throughout site.
+* color.adobe.com - Used to create palette for TAG X and subsequently used throughout site.
 
 ### Media 
 *  Used to create AI generated images (Copyright free).
