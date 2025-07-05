@@ -31,7 +31,7 @@ TAG X is dedicated to providing a fun, non-contact way of playing rugby. This we
     2. [CSS Validation](#CSS-validation)
     3. [Accessibility](#accessibility)
     4. [Performance](#performance)
-    5. [Reactivity](#reactivity)
+    5. [Automated testing](#automated)
     6. [Functionality testing](#functionality)
 7. [Bugs](#Bugs)
 8. [Deployment](#deployment)
@@ -216,7 +216,8 @@ The website consists of one page with various sections:
 *The enquiry form will adapt depending on the button pressed to access the enquiry form. Parents name field will not appear on the adult enquiry form and the drop down list will change depending on adult of junior enquiry form.
 
 ### Detailed overview of features 
-  #### Site wide 
+
+#### Site wide 
 **Favicon**
 * The site incorporates a custom favicon so that users can identify the site tab on their browser.
 * This uses the same font and colours as the logo and website to start building brand familiarity.
@@ -244,7 +245,7 @@ The website consists of one page with various sections:
 * HTML, CSS and javascript used for structure, styling and interactivity.
 
 
-### Rules section
+#### Rules section
 ![Home](docs/readme_images/rules.png)
 *Tag rugby description section tells users what tag rugby is, how it differs from contact rugby and why it’s suitable for all ages/abilities.
 *Headings that are clickable and allow the user to toggle the visibility of the correlating paragraph when clicked.
@@ -324,6 +325,9 @@ To make sure the website complied with strict accessibility guidelines, the WAVE
 #### Main (index.html)
 ![Main](docs/readme_images/post-lighthouse.png)
 
+#### JS Lint 
+![JSLint](docs/readme_images/js-lint.png)
+
 **Testing protocol:**
 1. Go to [TAG X](https://rory-codes.github.io/tag-x/index.html) in an open browser.
 2. Right-click and select "Inspect" to open the developer tools.
@@ -348,6 +352,9 @@ This was tested manually on the following devices:
 * LG Thinkpad laptop.
 * Ipad pro.
 * Devtools various phones: Iphone SE, Iphone XR, Iphone 12 pro, Iphone 14 pro max, pixel 7, Samsung galaxy s8+, Samsung galaxy S20 ultra, Iphone 5/SE.
+
+### Automated testing
+The site initially used JEST as a form of automated testing. However, ran into issues and decided that the site would only use manual testing during its development.
 
 ### Functionality testing
 
@@ -487,7 +494,7 @@ The user is prompted to enter an email address with the correct format/alternati
 * Click the junior book now button and the user should be taken to the enquiry form, containing the correct form items.
  
 **Actual:**
-All links performed as expected.
+All links performed as expected. 
 
 ## Bugs
 Several issues/bugs were present during the web development process. Below is a list of issues which are broken down into problem and fix, highlighting how code was changed to resolve issues.
