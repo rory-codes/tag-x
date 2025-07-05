@@ -73,6 +73,8 @@ Build an online presence to attract new clients and give users somewhere to acce
 
 * **Accessibility:** The website follows WCAG 2.1 guidelines to ensure all users can access content easily and without obstacle.
 
+* **Interactive front-end:** The website has various interactive front-end elements which were achieved using javaScript.
+
 **Further considerations**
 1. **Strategy:** Set user needs and goals to ensure the site serves TAG X and its customers/clients.
 2. **Scope:** Contain features such as the about, carousel, rules, history, card and enquiry sections.
