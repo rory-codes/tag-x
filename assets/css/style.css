@@ -537,15 +537,32 @@ button:focus,
 #error {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Ensures spacing between content & buttons */
+  justify-content: center; /* Center vertically */
+  align-items: center;     /* Center content horizontally */
   flex: 1 1 300px;
   max-width: 400px;
-  padding: 1.5rem;
+  width: 100%;
+  padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 4px 10px var(--primary-color);
   border: 2px solid var(--secondary-color);
   background-color: var(--lowlight-color);
   color: var(--highlight-color);
+  text-align: center;
+}
+
+#error img {
+  max-width: 150px;
+  margin-bottom: 1rem;
+}
+
+#error h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#error p {
+  margin-bottom: 1.5rem;
 }
 
 #error-btn {
