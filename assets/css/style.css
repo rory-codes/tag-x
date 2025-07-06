@@ -171,7 +171,7 @@ button {
 
 .about-header img {
   width: auto;
-  max-width: 200px;
+  max-width: 250px;
   height: auto;
   max-height: 320px;
   padding: 1rem;
@@ -181,7 +181,7 @@ button {
 
 /* Logo styling */
 .about-logo img {
-  width: 120px;
+  width: 200px;
   max-width: 100%;
   height: auto;
   border: none;
