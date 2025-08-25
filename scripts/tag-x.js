@@ -1,3 +1,5 @@
+/* jshint esversion: 6 */
+
 // Landing page script for Tag-X
 // Function to hide landing page and show about section using jQuery
 const enterBtn = function () {
