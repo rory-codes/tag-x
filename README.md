@@ -325,8 +325,8 @@ To make sure the website complied with strict accessibility guidelines, the WAVE
 #### Main (index.html)
 ![Main](docs/readme_images/post-lighthouse.png)
 
-#### JS Lint 
-![JSLint](docs/readme_images/js-hint.png)
+#### JS Hint 
+![JSHint](docs/readme_images/js.png)
 
 **Testing protocol:**
 1. Go to [TAG X](https://rory-codes.github.io/tag-x/index.html) in an open browser.
