@@ -360,7 +360,7 @@ $('#enquiry-form').on('submit', function (e) {
       alert('Form submitted successfully!');
       // Add actual submission or AJAX here
     } else {
-      alert(errorMessages.join('\n'));
+      alert(errorMessages.join('The form was not submitted due to the following errors:\n'));
     }
   });
 
