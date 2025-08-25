@@ -78,7 +78,7 @@ const aboutSection = function () {
 
   // Show the about section
   $("#tag-x-intro").removeClass("hidden");
-}   
+};   
 
 
 //About section button script for Tag-X
