@@ -304,7 +304,7 @@ The following errors were found.
 
 **Post fix CSS validation:**
 No errors were found.
-![Home](docs/readme_images/post-fix-css.png)
+![Home](docs/readme_images/css-post-fix.png)
 
 ### Accessibility 
 To make sure the website complied with strict accessibility guidelines, the WAVE WebAIM web accessibility assessment tool was utilized. Every page passes with no mistakes.
