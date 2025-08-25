@@ -97,7 +97,7 @@ As a young person interested in trying a new sport, I want to use the carousel t
 As a parent looking for sessions for my child, I want to use interactive cards to view venues, times and prices so that I can easily compare and choose a suitable option.
 
 ##### User story 4:
-As a parent looking for sessions for my child, I want to use interactive cards to view venues, times and prices so that I can easily compare and choose a suitable option.
+As a parent wanting to book a place, I want to use the enquiry form to select a venue/time and submit my contact details so I can reserve a spot easily.
 
 #### Should haves
 
@@ -304,7 +304,7 @@ The following errors were found.
 
 **Post fix CSS validation:**
 No errors were found.
-![Home](docs/readme_images/post-fix-css.png)
+![Home](docs/readme_images/css.png)
 
 ### Accessibility 
 To make sure the website complied with strict accessibility guidelines, the WAVE WebAIM web accessibility assessment tool was utilized. Every page passes with no mistakes.
