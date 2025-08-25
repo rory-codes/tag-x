@@ -155,7 +155,7 @@ button {
 
 /* About Section Styles  */
 #tag-x-intro {
-  margin: 2rem 0;
+  margin: 6.5rem 0;
   padding: 1rem;
 }
 
@@ -319,7 +319,7 @@ button {
 /* Enquiry section styles */
 #enquiry-section {
   max-width: 600px;
-  margin: 2rem auto;
+  margin: 6.5rem auto;
   padding: 1rem;
   background-color: var(--lowlight-color);
   border: 2px solid var(--secondary-color);
@@ -361,6 +361,15 @@ button {
   border-radius: 1px;
 }
 
+#scroll-top-btn {
+  justify-content: center;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--secondary-color);
+  color: var(--lowlight-color);
+  box-shadow: 0 0.5px 0.5px var(--primary-color);
+  border-radius: 5px;
+}
 
 /* Hover/focus states */
 button:hover, 
@@ -382,6 +391,7 @@ button:focus,
   gap: 2rem; /* space between the cards */
   justify-content: center;
   align-items: stretch; /* 👈 Ensures all cards stretch to equal height */
+  margin-top: 6.5rem;
 }
 
 .card {
@@ -395,6 +405,7 @@ button:focus,
   box-shadow: 0 4px 10px var(--primary-color);
   border: 2px solid var(--secondary-color);
   background-color: var(--lowlight-color);
+  margin-top: 2rem;
 }
 
 .card img {

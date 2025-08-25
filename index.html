@@ -29,7 +29,7 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
 <!--Navbar added using bootstrap-->
 <body>
   <div id="navbar-container">
-    <nav id="navigation" class="navbar navbar-expand-lg hidden"> <!--bg-body-tertiary class removed to change background color of navbar. fixed-top removed-->
+    <nav id="navigation" class="navbar navbar-expand-lg hidden fixed-top"> <!--bg-body-tertiary class removed to change background color of navbar. fixed-top removed-->
           <a class="navbar-brand" href="index.html">
             <img src="assets/images/tag-x-logo-1.png" alt="Tag X logo (Takes user to home page when clicked)" id="nav-logo" loading="lazy"> <!--Logo created using canva and imported--><!--Lazy loading-->
           </a>
@@ -129,8 +129,8 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
     <div class="carousel-img"><img src="assets/images/tag-x-carousel-8.jpg" alt="A TAG X player runs with the ball" loading="lazy"></div>
   </div>
 
-  <button class="carousel-btn prev"><</button>
-  <button class="carousel-btn next">></button>
+  <button class="carousel-btn prev"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+  <button class="carousel-btn next"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
 </div>
 
 <!--Rules section-->
@@ -335,7 +335,7 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
     <label for="name">Full Name*:</label>
     <input type="text" id="name" name="name" required>
 
-    <label for="p-name" class="form-label junior-option">Parents name*:</label>
+    <label for="p-name" class="form-label junior-option">Parents name:</label>
     <input class="form-input junior-option" id="p-name" name="p-name" type="text">
 
     <label for="contact">Contact Number*:</label>
@@ -366,6 +366,7 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
     ></textarea>
 
     <button id="enquiry-btn" type="submit">Submit</button>
+    <button id="scroll-top-btn" type="button">Return to home</button>
   </form>
 </section>
 </main>

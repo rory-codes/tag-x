@@ -313,68 +313,52 @@ $(document).ready(function () {
 // Form validaition script for Tag-X
 
 $('#enquiry-form').on('submit', function (e) {
-    e.preventDefault(); // Prevent default form submission
+  e.preventDefault(); // Prevent default form submission
 
-    let isValid = true;
-    let errorMessages = [];
+  let isValid = true;
+  let errorMessages = [];
 
-    // Reset all styles
-    $('#enquiry-form input, #enquiry-form select').css('border', '');
+  // Clear old errors
+  $('.error-message').remove();
+  $('#enquiry-form input, #enquiry-form select').css('border', '');
 
-    const name = $('#name').val().trim();
-    const contact = $('#contact').val().trim();
-    const email = $('#email').val().trim();
-    const selectedOption = $('select.form-select:visible').val(); // Updated selector
+  const name = $('#name').val().trim();
+  const contact = $('#contact').val().trim();
+  const email = $('#email').val().trim();
+  const selectedOption = $('select.form-select:visible').val();
 
-    // Validate name
-    if (!name) {
-      isValid = false;
-      $('#name').css('border', '2px solid red');
-      errorMessages.push('Full name is required.');
-    }
+  // Validate name
+  if (!name) {
+    isValid = false;
+    $('#name').css('border', '2px solid red')
+              .after('<span class="error-message" style="color:red;font-size:0.9em;">Full name is required.</span>');
+  }
 
-    // Validate contact
-    const contactRegex = /^[0-9]{7,15}$/;
-    if (!contact || !contactRegex.test(contact)) {
-      isValid = false;
-      $('#contact').css('border', '2px solid red');
-      errorMessages.push('Please enter a valid contact number.');
-    }
+   // Validate email
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!email || !emailRegex.test(email)) {
+    isValid = false;
+    $('#email').css('border', '2px solid red')
+               .after('<span class="error-message" style="color:red;font-size:0.9em;">Enter a valid email (e.g., name@example.com).</span>');
+  }
 
-    // Validate email
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!email || !emailRegex.test(email)) {
-      isValid = false;
-      $('#email').css('border', '2px solid red');
-      errorMessages.push('Please enter a valid email address.');
-    }
+  // Validate dropdown
+  if (!selectedOption) {
+    isValid = false;
+    $('select.form-select:visible').css('border', '2px solid red')
+      .after('<span class="error-message" style="color:red;font-size:0.9em;">Please choose a venue and time from the list.</span>');
+  }
 
-    // Validate visible dropdown
-    if (!selectedOption) {
-      $('select.form-select:visible').css('border', '2px solid red');
-      isValid = false;
-      errorMessages.push('Please select a venue and time.');
-    }
+  // Success case
+  if (isValid) {
+    $('#form-feedback').remove(); // clear any old feedback
+    $('#enquiry-form').before('<p id="form-feedback" style="color:green;font-weight:bold;">✅ Thank you! We have received your message. Someone from our team will be in touch.</p>');
+  }
 
-    if (isValid) {
-      alert('Form submitted successfully!');
-      // Add actual submission or AJAX here
-    } else {
-      alert(errorMessages.join('The form was not submitted due to the following errors:\n'));
-    }
-  });
-
- // Hide the enquiry form and scroll up on form submission
-$(document).ready(function () {
-  $('#enquiry-form').on('submit', function (e) {
-    e.preventDefault();
-    console.log("Thank you! <br> We have recieved your message. <br> Someone from our team will be in touch");
-// Hide the enquiry form
-    $('#enquiry-section').addClass('hidden');
-
-    $('html, body').animate({
-      scrollTop: $('#about').offset().top
-    }, 1000);
-  });
 });
 
+// Scroll to top
+$('#scroll-top-btn').on('click', function (e) {
+  e.preventDefault(); // prevent any default link behavior
+  $('html, body').animate({ scrollTop: 0 }, 800); // 800ms duration
+});
